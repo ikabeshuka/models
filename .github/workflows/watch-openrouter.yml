@@ -1,0 +1,63 @@
+name: Watch OpenRouter Models
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Check OpenRouter models
+        run: python watch.py
+
+      - name: Check for alert
+        id: alert
+        shell: bash
+        run: |
+          if [ -s report.md ]; then
+            echo "has_alert=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_alert=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Save latest model state
+        shell: bash
+        run: |
+          git config user.name "openrouter-model-watcher"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add models-state.json
+
+          if git diff --cached --quiet; then
+            echo "No state changes."
+          else
+            git commit -m "Update OpenRouter model state"
+            git push
+          fi
+
+      - name: Create GitHub issue
+        if: steps.alert.outputs.has_alert == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh issue create \
+            --title "🚨 OpenRouter stealth model change detected" \
+            --body-file report.md
