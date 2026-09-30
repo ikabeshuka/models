@@ -61,3 +61,4 @@ jobs:
           gh issue create \
             --title "🚨 OpenRouter stealth model change detected" \
             --body-file report.md
+            --assignee "${{ github.repository_owner }}"
