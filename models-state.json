@@ -1,6 +1,63 @@
 {
-  "updated_at": "2026-10-01T14:27:03.012784+00:00",
+  "updated_at": "2026-10-01T20:20:30.291916+00:00",
   "models": {
+    "apodex/apodex-1.1-mini:free": {
+      "id": "apodex/apodex-1.1-mini:free",
+      "canonical_slug": "apodex/apodex-1.1-mini-20261001",
+      "hugging_face_id": null,
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "created": 1790875335,
+      "description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 235929,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/apodex/apodex-1.1-mini-20261001/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false
+      }
+    },
     "unbiased/pareto-26.10-preview": {
       "id": "unbiased/pareto-26.10-preview",
       "canonical_slug": "unbiased/pareto-26.10-preview-20260929",
@@ -100,7 +157,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -182,7 +240,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -1065,7 +1124,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1147,7 +1207,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1230,7 +1291,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1320,7 +1382,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1411,7 +1474,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1493,7 +1557,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1576,7 +1641,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1666,7 +1732,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -2617,9 +2684,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001848",
-        "completion": "0.0000005544",
-        "input_cache_read": "0.00000000588"
+        "prompt": "0.00000015312",
+        "completion": "0.00000045936",
+        "input_cache_read": "0.000000004872"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -2694,9 +2761,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000243",
+        "prompt": "0.0000000264",
         "completion": "0.0000006",
-        "input_cache_read": "0.0000000243"
+        "input_cache_read": "0.0000000264"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -2907,7 +2974,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -2986,7 +3054,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -3152,7 +3221,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -3805,7 +3875,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -3887,7 +3958,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -3970,7 +4042,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -4044,7 +4117,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -5218,9 +5292,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000834",
-        "completion": "0.000002501",
-        "input_cache_read": "0.000000042",
+        "prompt": "0.0000007506",
+        "completion": "0.0000022509",
+        "input_cache_read": "0.0000000378",
         "overrides": [
           {
             "utc_start": 0,
@@ -6026,13 +6100,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000006",
-        "completion": "0.000002694",
-        "input_cache_read": "0.000000176"
+        "prompt": "0.00000012",
+        "completion": "0.00000114",
+        "input_cache_read": "0.000000067"
       },
       "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "context_length": 262144,
+        "max_completion_tokens": 235929,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -10184,9 +10258,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00001",
-        "input_cache_read": "0.00000066"
+        "prompt": "0.000000375",
+        "completion": "0.000009107",
+        "input_cache_read": "0.00000029"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10849,7 +10923,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -10929,7 +11004,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -11191,7 +11267,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -11271,7 +11348,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -11533,7 +11611,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -11615,7 +11694,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -12225,9 +12305,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528",
-        "input_cache_read": "0.000000033",
+        "prompt": "0.0000000825",
+        "completion": "0.00000033",
+        "input_cache_read": "0.000000020625",
         "overrides": [
           {
             "utc_start": 0,
@@ -17207,7 +17287,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -17354,9 +17435,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00001",
-        "input_cache_read": "0.00000066"
+        "prompt": "0.000000375",
+        "completion": "0.000009107",
+        "input_cache_read": "0.00000029"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -17969,7 +18050,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -18043,7 +18125,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -18120,7 +18203,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -18355,7 +18439,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -19220,7 +19305,8 @@
         "seed",
         "stop",
         "structured_outputs",
-        "top_logprobs"
+        "top_logprobs",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -19993,9 +20079,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       },
       "top_provider": {
         "context_length": 262144,
@@ -21343,7 +21429,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -21422,7 +21509,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -21502,7 +21590,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -21581,7 +21670,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -22259,7 +22349,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -22333,7 +22424,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -22410,7 +22502,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -22589,7 +22682,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -23577,7 +23671,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -26355,7 +26450,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -27270,7 +27366,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -27325,7 +27422,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -27389,7 +27487,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -27455,7 +27554,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -27620,7 +27720,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -28004,7 +28105,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -29282,7 +29384,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -29417,7 +29520,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -29551,7 +29655,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -29678,7 +29783,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -30362,7 +30468,8 @@
         "structured_outputs",
         "temperature",
         "top_logprobs",
-        "top_p"
+        "top_p",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -30838,7 +30945,8 @@
         "structured_outputs",
         "temperature",
         "top_logprobs",
-        "top_p"
+        "top_p",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -31136,7 +31244,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -31198,7 +31307,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -33304,7 +33414,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -33438,7 +33549,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -33573,7 +33685,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -33707,7 +33820,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -33842,7 +33956,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -33957,7 +34072,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
