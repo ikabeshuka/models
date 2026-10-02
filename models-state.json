@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T00:45:42.520160+00:00",
+  "updated_at": "2026-10-02T06:59:27.171876+00:00",
   "models": {
     "apodex/apodex-1.1-mini:free": {
       "id": "apodex/apodex-1.1-mini:free",
@@ -2684,9 +2684,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001431",
-        "completion": "0.0000035",
-        "input_cache_read": "0.0000001431"
+        "prompt": "0.000000132",
+        "completion": "0.000000396",
+        "input_cache_read": "0.0000000042"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -2761,9 +2761,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000027",
-        "completion": "0.0000006",
-        "input_cache_read": "0.000000027"
+        "prompt": "0.000000015",
+        "completion": "0.00000075",
+        "input_cache_read": "0.000000002115"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -3489,9 +3489,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000003",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000001"
+        "prompt": "0.000000015",
+        "completion": "0.00000075",
+        "input_cache_read": "0.000000002115"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -5454,9 +5454,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000002",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000001"
+        "prompt": "0.00000002625",
+        "completion": "0.0000009",
+        "input_cache_read": "0.000000013125"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6101,13 +6101,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000106",
-        "completion": "0.000002653",
-        "input_cache_read": "0.000000176"
+        "prompt": "0.00000012",
+        "completion": "0.000004",
+        "input_cache_read": "0.00000006"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -7312,9 +7312,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000198",
-        "input_cache_read": "0.000000022",
+        "prompt": "0.00000132",
+        "completion": "0.00000396",
+        "input_cache_read": "0.000000044",
         "overrides": [
           {
             "utc_days": [
@@ -8306,9 +8306,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000108",
+        "prompt": "0.0000000051",
         "completion": "0.00000128",
-        "input_cache_read": "0.0000000108"
+        "input_cache_read": "0.0000000051"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -8378,9 +8378,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000108",
+        "prompt": "0.0000000051",
         "completion": "0.00000128",
-        "input_cache_read": "0.0000000108"
+        "input_cache_read": "0.0000000051"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10259,9 +10259,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000003807",
-        "completion": "0.00001",
-        "input_cache_read": "0.0000003807"
+        "prompt": "0.0000027",
+        "completion": "0.0000135",
+        "input_cache_read": "0.00000027"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -17442,9 +17442,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000003807",
-        "completion": "0.00001",
-        "input_cache_read": "0.0000003807"
+        "prompt": "0.00000139",
+        "completion": "0.000013",
+        "input_cache_read": "0.0000008"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -23282,12 +23282,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001625",
-        "completion": "0.0000013"
+        "prompt": "0.00000015",
+        "completion": "0.000001",
+        "input_cache_read": "0.00000005"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": 235929,
         "is_moderated": false
       },
       "per_request_limits": null,
