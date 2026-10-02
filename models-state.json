@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T19:16:34.023403+00:00",
+  "updated_at": "2026-10-02T22:59:34.357418+00:00",
   "models": {
     "inclusionai/ling-3.1-flash": {
       "id": "inclusionai/ling-3.1-flash",
@@ -2093,6 +2093,44 @@
         "default_effort": "high"
       }
     },
+    "nvidia/switchyard": {
+      "id": "nvidia/switchyard",
+      "canonical_slug": "nvidia/switchyard",
+      "hugging_face_id": null,
+      "name": "NVIDIA: Switchyard",
+      "created": 1790025947,
+      "description": "Switchyard is an open-source model router that switches between multiple models to optimize the cost of requests. By default it will use OpenRouter market data to select the most popular...",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Router",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "-1",
+        "completion": "-1"
+      },
+      "top_provider": {
+        "context_length": null,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/nvidia/switchyard/endpoints"
+      }
+    },
     "xiaomi/mimo-v2.6-pro-ultraspeed": {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
       "canonical_slug": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
@@ -2821,9 +2859,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000002",
-        "completion": "0.0000006",
-        "input_cache_read": "0.00000002"
+        "prompt": "0.000000015",
+        "completion": "0.000000676999",
+        "input_cache_read": "0.000000002097"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -3549,9 +3587,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000002",
-        "completion": "0.0000006",
-        "input_cache_read": "0.00000002"
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.000000006"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -5438,13 +5476,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000006",
-        "completion": "0.00000018",
-        "input_cache_read": "0.000000012"
+        "prompt": "0.000000042",
+        "completion": "0.0000001232",
+        "input_cache_read": "0.0000000084"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 235929,
+        "max_completion_tokens": 32768,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -5515,7 +5553,7 @@
       },
       "pricing": {
         "prompt": "0.00000002625",
-        "completion": "0.0000006",
+        "completion": "0.000000928749",
         "input_cache_read": "0.00000001125"
       },
       "top_provider": {
@@ -8366,9 +8404,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000012825",
-        "completion": "0.0000012",
-        "input_cache_read": "0.000000012825"
+        "prompt": "0.000000003825",
+        "completion": "0.000001043574",
+        "input_cache_read": "0.00000000105"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -13315,7 +13353,7 @@
       "pricing": {
         "prompt": "0.00000041",
         "completion": "0.00000399",
-        "input_cache_read": "0.00000032"
+        "input_cache_read": "0.00000026"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -14358,13 +14396,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000006",
-        "completion": "0.0000024",
-        "input_cache_read": "0.00000012"
+        "prompt": "0.0000005",
+        "completion": "0.0000022",
+        "input_cache_read": "0.0000001"
       },
       "top_provider": {
-        "context_length": 202800,
-        "max_completion_tokens": 182520,
+        "context_length": 262144,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -17502,9 +17540,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000139",
-        "completion": "0.000013",
-        "input_cache_read": "0.0000008"
+        "prompt": "0.000001",
+        "completion": "0.000011357",
+        "input_cache_read": "0.00000029"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -29952,12 +29990,11 @@
       },
       "pricing": {
         "prompt": "0.0000006",
-        "completion": "0.0000025",
-        "input_cache_read": "0.00000015"
+        "completion": "0.0000025"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 98304,
+        "max_completion_tokens": 235929,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -32437,13 +32474,12 @@
         "instruct_type": "deepseek-v3.1"
       },
       "pricing": {
-        "prompt": "0.0000003",
-        "completion": "0.000001",
-        "input_cache_read": "0.000000135"
+        "prompt": "0.00000027",
+        "completion": "0.000001"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 65536,
+        "context_length": 163840,
+        "max_completion_tokens": 147456,
         "is_moderated": false
       },
       "per_request_limits": null,
