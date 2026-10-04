@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T17:33:45.921585+00:00",
+  "updated_at": "2026-10-04T21:21:15.729525+00:00",
   "models": {
     "inclusionai/ling-3.1-flash": {
       "id": "inclusionai/ling-3.1-flash",
@@ -5570,7 +5570,7 @@
       "pricing": {
         "prompt": "0.0000000352",
         "completion": "0.0000005",
-        "input_cache_read": "0.0000000352"
+        "input_cache_read": "0.0000000232"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6216,12 +6216,12 @@
       },
       "pricing": {
         "prompt": "0.00000008",
-        "completion": "0.0000044",
-        "input_cache_read": "0.0000000528"
+        "completion": "0.000005",
+        "input_cache_read": "0.00000007"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -7427,9 +7427,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000055",
-        "completion": "0.0000042",
-        "input_cache_read": "0.00000045"
+        "prompt": "0.00000085",
+        "completion": "0.000005",
+        "input_cache_read": "0.0000007"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10294,7 +10294,7 @@
       },
       "pricing": {
         "prompt": "0.00000072",
-        "completion": "0.000013",
+        "completion": "0.000014",
         "input_cache_read": "0.0000007"
       },
       "top_provider": {
@@ -13287,9 +13287,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000192",
+        "prompt": "0.000000104",
         "completion": "0.000008",
-        "input_cache_read": "0.00000019"
+        "input_cache_read": "0.0000001"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -17476,7 +17476,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000006803",
+        "prompt": "0.0000006416",
         "completion": "0.000013",
         "input_cache_read": "0.00000045"
       },
@@ -26734,7 +26734,7 @@
       },
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": "2026-10-08",
+      "expiration_date": null,
       "links": {
         "details": "/api/v1/models/minimax/minimax-m2.1/endpoints"
       },
