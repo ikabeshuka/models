@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:36:16.825594+00:00",
+  "updated_at": "2026-10-05T23:15:16.183978+00:00",
   "models": {
     "inclusionai/ling-3.1-flash": {
       "id": "inclusionai/ling-3.1-flash",
@@ -5667,13 +5667,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
+        "prompt": "0.0000000352",
         "completion": "0.0000005",
-        "input_cache_read": "0.00000003"
+        "input_cache_read": "0.0000000232"
       },
       "top_provider": {
-        "context_length": 1048575,
-        "max_completion_tokens": 943717,
+        "context_length": 1048576,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -13275,9 +13275,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000032",
+        "prompt": "0.0000000312",
         "completion": "0.000012",
-        "input_cache_read": "0.000000032"
+        "input_cache_read": "0.0000000312"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -17464,7 +17464,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000007854",
+        "prompt": "0.0000007975",
         "completion": "0.000013",
         "input_cache_read": "0.00000045"
       },
