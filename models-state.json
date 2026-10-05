@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T15:58:19.682423+00:00",
+  "updated_at": "2026-10-05T22:36:16.825594+00:00",
   "models": {
     "inclusionai/ling-3.1-flash": {
       "id": "inclusionai/ling-3.1-flash",
@@ -842,67 +842,6 @@
           "minimal"
         ],
         "default_effort": "xhigh"
-      }
-    },
-    "stealth/space-bunny-alpha": {
-      "id": "stealth/space-bunny-alpha",
-      "canonical_slug": "stealth/space-bunny-alpha",
-      "hugging_face_id": null,
-      "name": "Space Bunny Alpha",
-      "created": 1790174884,
-      "description": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space...",
-      "context_length": 1000000,
-      "architecture": {
-        "modality": "text+image+video->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 1000000,
-        "max_completion_tokens": 524288,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-10-05",
-      "links": {
-        "details": "/api/v1/models/stealth/space-bunny-alpha/endpoints"
-      },
-      "reasoning": {
-        "mandatory": true,
-        "supported_efforts": [
-          "max",
-          "xhigh",
-          "high",
-          "medium",
-          "low"
-        ],
-        "default_effort": "max"
       }
     },
     "aion-labs/aion-3.5-mini": {
@@ -2806,9 +2745,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001901",
+        "prompt": "0.0000002783",
         "completion": "0.0000042",
-        "input_cache_read": "0.00000019"
+        "input_cache_read": "0.00000028"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -4617,7 +4556,12 @@
             "win_rate": 45.8,
             "rank": 7
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 48.1,
+          "coding_index": 75.8,
+          "agentic_index": 55.5
+        }
       },
       "reasoning": {
         "mandatory": true,
@@ -5422,9 +5366,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000834",
-        "completion": "0.000002501",
-        "input_cache_read": "0.000000042",
+        "prompt": "0.0000007506",
+        "completion": "0.0000022509",
+        "input_cache_read": "0.0000000378",
         "overrides": [
           {
             "utc_start": 0,
@@ -6107,6 +6051,14 @@
       "links": {
         "details": "/api/v1/models/deepseek/deepseek-v4-flash-vision-exp-20260821/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 34.8,
+          "coding_index": 65,
+          "agentic_index": 47.5
+        }
+      },
       "reasoning": {
         "mandatory": false,
         "default_enabled": true,
@@ -6349,9 +6301,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
+        "prompt": "0.00000007",
         "completion": "0.000007",
-        "input_cache_read": "0.000000045"
+        "input_cache_read": "0.000000065"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6732,82 +6684,6 @@
         "default_effort": "xhigh"
       }
     },
-    "qwen/qwen3.8-27b:free": {
-      "id": "qwen/qwen3.8-27b:free",
-      "canonical_slug": "qwen/qwen3.8-27b-20260814",
-      "hugging_face_id": "Qwen/Qwen3.8-27B",
-      "name": "Qwen: Qwen3.8 27B (free)",
-      "created": 1786722910,
-      "description": "Qwen3.8 27B is an open-weight dense vision-language model from Qwen. It is suited for coding, professional workflows, research, multimodal interaction, and long-running agent tasks, with flexible thinking that can be...",
-      "context_length": 262144,
-      "architecture": {
-        "modality": "text+image+video->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 235929,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 1,
-        "top_p": 0.95,
-        "top_k": 20
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/qwen/qwen3.8-27b-20260814/endpoints"
-      },
-      "benchmarks": {
-        "design_arena": [],
-        "artificial_analysis": {
-          "intelligence_index": 33.7,
-          "coding_index": 68.1,
-          "agentic_index": 45.8
-        }
-      },
-      "reasoning": {
-        "mandatory": false,
-        "default_enabled": true,
-        "supported_efforts": [
-          "xhigh",
-          "medium",
-          "low"
-        ],
-        "default_effort": "xhigh"
-      }
-    },
     "dots-studio/dots-3-note-preview:free": {
       "id": "dots-studio/dots-3-note-preview:free",
       "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
@@ -7023,9 +6899,9 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": 39.1,
-          "coding_index": 76.1,
-          "agentic_index": 35.2
+          "intelligence_index": 39.6,
+          "coding_index": 71.5,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -7200,9 +7076,9 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": 39.1,
-          "coding_index": 76.1,
-          "agentic_index": 35.2
+          "intelligence_index": 39.6,
+          "coding_index": 71.5,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -7442,13 +7318,94 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000004",
-        "completion": "0.000005",
-        "input_cache_read": "0.00000036"
+        "prompt": "0.00000066",
+        "completion": "0.00000198",
+        "input_cache_read": "0.000000022",
+        "overrides": [
+          {
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "prompt": "0.00000066",
+            "completion": "0.00000198",
+            "input_cache_read": "0.000000022"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 0,
+            "utc_end": 100,
+            "prompt": "0.00000066",
+            "completion": "0.00000198",
+            "input_cache_read": "0.000000022"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 100,
+            "utc_end": 400,
+            "prompt": "0.00000132",
+            "completion": "0.00000396",
+            "input_cache_read": "0.000000044"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 400,
+            "utc_end": 600,
+            "prompt": "0.00000066",
+            "completion": "0.00000198",
+            "input_cache_read": "0.000000022"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 600,
+            "utc_end": 1000,
+            "prompt": "0.00000132",
+            "completion": "0.00000396",
+            "input_cache_read": "0.000000044"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 1000,
+            "utc_end": 0,
+            "prompt": "0.00000066",
+            "completion": "0.00000198",
+            "input_cache_read": "0.000000022"
+          }
+        ]
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 393216,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -7761,6 +7718,14 @@
       "links": {
         "details": "/api/v1/models/liquid/lfm-2.5-2.6b-20260811/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 8.4,
+          "coding_index": 7.7,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": true
       }
@@ -8057,7 +8022,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 28.2,
           "coding_index": 52.7,
           "agentic_index": null
         }
@@ -8138,6 +8103,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/meta/muse-glimmer-30b-20260810/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 17.5,
+          "coding_index": 49,
+          "agentic_index": 8.5
+        }
       },
       "reasoning": {
         "mandatory": true,
@@ -10308,9 +10281,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000067",
+        "prompt": "0.00000119",
         "completion": "0.000014",
-        "input_cache_read": "0.00000022"
+        "input_cache_read": "0.00000039"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -12361,9 +12334,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528",
-        "input_cache_read": "0.000000033",
+        "prompt": "0.0000000825",
+        "completion": "0.00000033",
+        "input_cache_read": "0.000000020625",
         "overrides": [
           {
             "utc_start": 0,
@@ -13302,9 +13275,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000192",
-        "completion": "0.000016",
-        "input_cache_read": "0.0000000192"
+        "prompt": "0.000000032",
+        "completion": "0.000012",
+        "input_cache_read": "0.000000032"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -15044,7 +15017,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 19.5,
           "coding_index": 39.6,
           "agentic_index": null
         }
@@ -15768,7 +15741,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 27.2,
           "coding_index": 51.5,
           "agentic_index": null
         }
@@ -15996,9 +15969,9 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": 32.6,
-          "coding_index": 70.1,
-          "agentic_index": 26
+          "intelligence_index": 33.6,
+          "coding_index": null,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -16231,9 +16204,9 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": 32.6,
-          "coding_index": 70.1,
-          "agentic_index": 26
+          "intelligence_index": 33.6,
+          "coding_index": null,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -17214,7 +17187,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 10.3,
           "coding_index": 13.8,
           "agentic_index": null
         }
@@ -17491,7 +17464,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000066",
+        "prompt": "0.0000007854",
         "completion": "0.000013",
         "input_cache_read": "0.00000045"
       },
@@ -17973,6 +17946,14 @@
       "expiration_date": "2026-10-09",
       "links": {
         "details": "/api/v1/models/qwen/qwen3.6-max-preview-20260420/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 28.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -19305,7 +19286,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 25.2,
           "coding_index": 56.8,
           "agentic_index": 15.8
         }
@@ -19791,7 +19772,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 40.7,
           "coding_index": 73.6,
           "agentic_index": 38.6
         }
@@ -19866,7 +19847,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 40.7,
           "coding_index": 73.6,
           "agentic_index": 38.6
         }
@@ -20132,9 +20113,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       },
       "top_provider": {
         "context_length": 262144,
@@ -20177,7 +20158,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 16.7,
           "coding_index": 39.3,
           "agentic_index": 2.9
         }
@@ -20243,7 +20224,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 16.7,
           "coding_index": 39.3,
           "agentic_index": 2.9
         }
@@ -20534,7 +20515,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 27,
           "coding_index": 54.5,
           "agentic_index": null
         }
@@ -20749,7 +20730,12 @@
             "win_rate": 49.3,
             "rank": 43
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 23.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -21128,7 +21114,12 @@
             "win_rate": 51.8,
             "rank": 45
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 25.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -22029,7 +22020,12 @@
             "win_rate": 53.4,
             "rank": 30
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 26.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -22341,9 +22337,9 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": 11.2,
-          "coding_index": 28.7,
-          "agentic_index": 1.2
+          "intelligence_index": 13.3,
+          "coding_index": 23.5,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -22664,7 +22660,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 39,
           "coding_index": 71.1,
           "agentic_index": null
         }
@@ -22844,7 +22840,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 39,
           "coding_index": 71.1,
           "agentic_index": null
         }
@@ -22978,7 +22974,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 13.8,
           "coding_index": 31.1,
           "agentic_index": 1.6
         }
@@ -23376,8 +23372,8 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
-          "coding_index": 37,
+          "intelligence_index": 19.3,
+          "coding_index": null,
           "agentic_index": null
         }
       },
@@ -23450,6 +23446,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/qwen/qwen3.5-27b-20260224/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 22.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -23524,9 +23528,9 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": 15.6,
-          "coding_index": 45.7,
-          "agentic_index": 7.6
+          "intelligence_index": 17.7,
+          "coding_index": 43.3,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -23832,7 +23836,12 @@
             "win_rate": 48.6,
             "rank": 74
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 32.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -24985,9 +24994,9 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": 18.4,
-          "coding_index": 48.2,
-          "agentic_index": 8.3
+          "intelligence_index": 21.4,
+          "coding_index": null,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -25110,7 +25119,12 @@
             "win_rate": 57.5,
             "rank": 47
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 22.8,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": true
@@ -25269,7 +25283,12 @@
             "win_rate": 55,
             "rank": 36
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 27.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -25345,6 +25364,14 @@
       "expiration_date": "2026-10-09",
       "links": {
         "details": "/api/v1/models/qwen/qwen3-max-thinking-20260123/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 21.3,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -25501,7 +25528,12 @@
             "win_rate": 61.2,
             "rank": 13
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 31.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -25665,7 +25697,12 @@
             "win_rate": 61.2,
             "rank": 13
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 31.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -25866,6 +25903,14 @@
       "links": {
         "details": "/api/v1/models/stepfun/step-3.5-flash/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 17,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": true
       }
@@ -26031,7 +26076,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 23.5,
           "coding_index": 46.8,
           "agentic_index": null
         }
@@ -26453,7 +26498,12 @@
             "win_rate": 54,
             "rank": 58
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 14.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -26552,7 +26602,12 @@
             "win_rate": 39.6,
             "rank": 38
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 28.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": true,
@@ -26805,7 +26860,12 @@
             "win_rate": 55.4,
             "rank": 53
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 20.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": true
@@ -26963,7 +27023,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 22.2,
           "coding_index": 45.3,
           "agentic_index": null
         }
@@ -27127,7 +27187,12 @@
             "win_rate": 57,
             "rank": 54
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 26.3,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -27291,7 +27356,12 @@
             "win_rate": 57,
             "rank": 54
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 26.3,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -27715,7 +27785,12 @@
             "win_rate": 53.7,
             "rank": 50
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 30.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -27881,7 +27956,12 @@
             "win_rate": 53.7,
             "rank": 50
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 30.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -28069,6 +28149,14 @@
       "links": {
         "details": "/api/v1/models/z-ai/glm-4.6-20251208/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 11.2,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": false
       }
@@ -28241,7 +28329,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 13.4,
           "coding_index": 23,
           "agentic_index": null
         }
@@ -28886,13 +28974,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000028",
+        "prompt": "0.000000259",
         "completion": "0.00000042",
-        "input_cache_read": "0.000000028"
+        "input_cache_read": "0.000000135"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 65536,
+        "context_length": 163840,
+        "max_completion_tokens": 147456,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -28991,7 +29079,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 21.5,
           "coding_index": 44.2,
           "agentic_index": null
         }
@@ -29143,7 +29231,12 @@
             "win_rate": 55.1,
             "rank": 26
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 29.1,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -29289,7 +29382,12 @@
             "win_rate": 55.1,
             "rank": 26
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 29.1,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -29512,7 +29610,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 24.7,
           "coding_index": 49.4,
           "agentic_index": null
         }
@@ -29648,7 +29746,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 24.7,
           "coding_index": 49.4,
           "agentic_index": null
         }
@@ -29781,7 +29879,12 @@
             "win_rate": 56.1,
             "rank": 76
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 23.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": true,
@@ -29909,7 +30012,12 @@
             "win_rate": 42.8,
             "rank": 95
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 20.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -29994,8 +30102,8 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
-          "coding_index": 21,
+          "intelligence_index": 22,
+          "coding_index": null,
           "agentic_index": null
         }
       },
@@ -30063,7 +30171,12 @@
             "win_rate": 26.2,
             "rank": 131
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 9.2,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "perplexity/sonar-pro-search": {
@@ -30346,7 +30459,12 @@
             "win_rate": 48,
             "rank": 83
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 18.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": true
@@ -30411,6 +30529,14 @@
       "expiration_date": "2026-10-09",
       "links": {
         "details": "/api/v1/models/qwen/qwen3-vl-32b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 11.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "ibm-granite/granite-4.0-h-micro": {
@@ -30468,6 +30594,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/ibm-granite/granite-4.0-h-micro/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 5.1,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "openai/gpt-5-image-mini": {
@@ -30879,6 +31013,14 @@
       "links": {
         "details": "/api/v1/models/qwen/qwen3-vl-8b-thinking/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 8.2,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": true
       }
@@ -30941,6 +31083,14 @@
       "expiration_date": "2026-10-09",
       "links": {
         "details": "/api/v1/models/qwen/qwen3-vl-8b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.3,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "openai/gpt-5-image": {
@@ -31178,6 +31328,14 @@
       "links": {
         "details": "/api/v1/models/qwen/qwen3-vl-30b-a3b-thinking/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 9.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": true
       }
@@ -31244,6 +31402,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/qwen/qwen3-vl-30b-a3b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "openai/gpt-5-pro": {
@@ -31516,7 +31682,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 18.5,
           "coding_index": 45.8,
           "agentic_index": null
         }
@@ -31954,7 +32120,12 @@
             "win_rate": 54.3,
             "rank": 66
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 16.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -32127,6 +32298,14 @@
       "links": {
         "details": "/api/v1/models/qwen/qwen3-vl-235b-a22b-thinking/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 13.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": true
       }
@@ -32191,6 +32370,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/qwen/qwen3-vl-235b-a22b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 9.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "qwen/qwen3-max": {
@@ -32325,7 +32512,12 @@
             "win_rate": 44.5,
             "rank": 92
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 15.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -32426,12 +32618,13 @@
         "instruct_type": "deepseek-v3.1"
       },
       "pricing": {
-        "prompt": "0.00000027",
-        "completion": "0.000001"
+        "prompt": "0.0000003",
+        "completion": "0.000001",
+        "input_cache_read": "0.000000135"
       },
       "top_provider": {
-        "context_length": 163840,
-        "max_completion_tokens": 147456,
+        "context_length": 131072,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -32663,7 +32856,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 11.2,
           "coding_index": 17.4,
           "agentic_index": null
         }
@@ -32727,6 +32920,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/qwen/qwen3-next-80b-a3b-instruct-2509/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 9.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "qwen/qwen-plus-2025-07-28": {
@@ -32863,7 +33064,12 @@
             "win_rate": 48.3,
             "rank": 96
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 15.3,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {
@@ -32992,6 +33198,14 @@
       "links": {
         "details": "/api/v1/models/nousresearch/hermes-4-405b/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": false
       }
@@ -33105,7 +33319,12 @@
             "win_rate": 48,
             "rank": 90
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 13.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -33409,6 +33628,14 @@
       "links": {
         "details": "/api/v1/models/z-ai/glm-4.5v/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": false
       }
@@ -33533,7 +33760,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 23,
           "coding_index": 37.8,
           "agentic_index": null
         }
@@ -33668,7 +33895,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 23,
           "coding_index": 37.8,
           "agentic_index": null
         }
@@ -33804,9 +34031,9 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": 16.8,
-          "coding_index": 15.6,
-          "agentic_index": 6.8
+          "intelligence_index": 20.6,
+          "coding_index": null,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -33939,9 +34166,9 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": 16.8,
-          "coding_index": 15.6,
-          "agentic_index": 6.8
+          "intelligence_index": 20.6,
+          "coding_index": null,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -34059,7 +34286,12 @@
             "win_rate": 48.9,
             "rank": 97
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 13,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": true,
@@ -34175,7 +34407,12 @@
             "win_rate": 48.9,
             "rank": 97
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 13,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": true,
@@ -34514,9 +34751,9 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": 9,
-          "coding_index": 20.7,
-          "agentic_index": 1.2
+          "intelligence_index": 10,
+          "coding_index": null,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -34607,9 +34844,9 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": 9,
-          "coding_index": 20.7,
-          "agentic_index": 1.2
+          "intelligence_index": 10,
+          "coding_index": null,
+          "agentic_index": null
         }
       },
       "reasoning": {
@@ -34740,7 +34977,12 @@
             "win_rate": 55.3,
             "rank": 67
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 22.8,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -34864,7 +35106,12 @@
             "win_rate": 55.3,
             "rank": 67
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 22.8,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -35148,7 +35395,12 @@
             "win_rate": 57.1,
             "rank": 100
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 9.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
@@ -35204,6 +35456,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/qwen/qwen3-30b-a3b-instruct-2507/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "z-ai/glm-4.5": {
@@ -35309,7 +35569,12 @@
             "win_rate": 53.7,
             "rank": 71
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 12.8,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -35422,7 +35687,12 @@
             "win_rate": 51.3,
             "rank": 81
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 11.1,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -35634,7 +35904,12 @@
             "win_rate": 61.7,
             "rank": 77
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 11.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "bytedance/ui-tars-1.5-7b": {
@@ -35755,6 +36030,14 @@
       "links": {
         "details": "/api/v1/models/google/gemini-2.5-flash-lite/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 10.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": false
       }
@@ -35821,6 +36104,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/google/gemini-2.5-flash-lite/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 10.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -35926,7 +36217,12 @@
             "win_rate": 43.6,
             "rank": 105
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 12,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "moonshotai/kimi-k2": {
@@ -36015,7 +36311,12 @@
             "win_rate": 53.1,
             "rank": 108
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 12.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "cognitivecomputations/dolphin-mistral-24b-venice-edition": {
@@ -36419,6 +36720,14 @@
       "links": {
         "details": "/api/v1/models/minimax/minimax-m1/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 11.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": false
       }
@@ -36541,7 +36850,12 @@
             "win_rate": 43.1,
             "rank": 80
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 15.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -36664,7 +36978,12 @@
             "win_rate": 43.1,
             "rank": 80
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 15.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -36980,6 +37299,14 @@
       "links": {
         "details": "/api/v1/models/openai/o3-pro-2025-06-10/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 21.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": false
       }
@@ -37170,7 +37497,12 @@
             "win_rate": 52.7,
             "rank": 80
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 13.1,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": true
@@ -37299,7 +37631,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 18.9,
           "coding_index": 37.6,
           "agentic_index": null
         }
@@ -37406,7 +37738,12 @@
             "win_rate": 47.6,
             "rank": 103
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "meta-llama/llama-guard-4-12b": {
@@ -37556,7 +37893,12 @@
             "win_rate": 37.7,
             "rank": 124
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 7.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false,
@@ -37624,7 +37966,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 7.3,
           "coding_index": 9,
           "agentic_index": 0.8
         }
@@ -37694,7 +38036,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 8.2,
           "coding_index": 13.8,
           "agentic_index": 0.9
         }
@@ -37764,7 +38106,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 8.6,
           "coding_index": 15.3,
           "agentic_index": 0.9
         }
@@ -37868,7 +38210,12 @@
             "win_rate": 40.4,
             "rank": 113
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 9.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -38024,7 +38371,12 @@
             "win_rate": 53.8,
             "rank": 111
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 20.2,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -38117,7 +38469,12 @@
             "win_rate": 53.8,
             "rank": 111
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 20.2,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -38217,7 +38574,12 @@
             "win_rate": 47.1,
             "rank": 119
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 16.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -38317,7 +38679,12 @@
             "win_rate": 47.1,
             "rank": 119
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 16.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -38418,7 +38785,12 @@
             "win_rate": 52.3,
             "rank": 110
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 12.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "openai/gpt-4.1:batch": {
@@ -38515,7 +38887,12 @@
             "win_rate": 52.3,
             "rank": 110
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 12.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "openai/gpt-4.1-mini": {
@@ -38615,7 +38992,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 10.2,
           "coding_index": 20.2,
           "agentic_index": null
         }
@@ -38717,7 +39094,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 10.2,
           "coding_index": 20.2,
           "agentic_index": null
         }
@@ -38820,7 +39197,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 7.8,
           "coding_index": 11.1,
           "agentic_index": null
         }
@@ -38922,7 +39299,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 7.8,
           "coding_index": 11.1,
           "agentic_index": null
         }
@@ -39029,7 +39406,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 10,
           "coding_index": 16.3,
           "agentic_index": 0.6
         }
@@ -39128,7 +39505,7 @@
           }
         ],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 8.1,
           "coding_index": 8.2,
           "agentic_index": 0.5
         }
@@ -39240,6 +39617,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/openai/o1-pro/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 12.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
       },
       "reasoning": {
         "mandatory": false
@@ -39358,7 +39743,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 4.8,
           "coding_index": 2.7,
           "agentic_index": null
         }
@@ -39542,6 +39927,14 @@
       "links": {
         "details": "/api/v1/models/rekaai/reka-flash-3/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 6.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": true
       }
@@ -39719,6 +40112,14 @@
       "links": {
         "details": "/api/v1/models/perplexity/sonar-reasoning-pro/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 11.8,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": false
       }
@@ -39769,6 +40170,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/perplexity/sonar-pro/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "perplexity/sonar-deep-research": {
@@ -39876,6 +40285,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/mistralai/mistral-saba-2502/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 6.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "openai/o3-mini-high": {
@@ -40165,6 +40582,14 @@
       "links": {
         "details": "/api/v1/models/openai/o3-mini-2025-01-31/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 12.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": false
       }
@@ -40225,6 +40650,14 @@
       "links": {
         "details": "/api/v1/models/openai/o3-mini-2025-01-31/endpoints"
       },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 12.5,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
       "reasoning": {
         "mandatory": false
       }
@@ -40283,6 +40716,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/mistralai/mistral-small-24b-instruct-2501/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 6.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "perplexity/sonar": {
@@ -40331,6 +40772,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/perplexity/sonar/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "deepseek/deepseek-r1": {
@@ -40501,6 +40950,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/microsoft/phi-4/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 5.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "deepseek/deepseek-chat": {
@@ -40721,7 +41178,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 15.2,
           "coding_index": 39.7,
           "agentic_index": null
         }
@@ -40838,7 +41295,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 7.7,
           "coding_index": 11.9,
           "agentic_index": null
         }
@@ -40888,6 +41345,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/amazon/nova-lite-v1/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 6.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "amazon/nova-micro-v1": {
@@ -40933,6 +41398,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/amazon/nova-micro-v1/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 5.9,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "amazon/nova-pro-v1": {
@@ -40989,7 +41462,12 @@
             "win_rate": 21.4,
             "rank": 133
           }
-        ]
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "openai/gpt-4o-2024-11-20": {
@@ -41048,6 +41526,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/openai/gpt-4o-2024-11-20/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 8.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "mistralai/mistral-large-2407": {
@@ -41102,6 +41588,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/mistralai/mistral-large-2407/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "qwen/qwen-2.5-coder-32b-instruct": {
@@ -41153,6 +41647,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/qwen/qwen-2.5-coder-32b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 6.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "thedrummer/unslopnemo-12b": {
@@ -41367,6 +41869,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 4.8,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "meta-llama/llama-3.2-3b-instruct": {
@@ -41420,6 +41930,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/meta-llama/llama-3.2-3b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 5.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "qwen/qwen-2.5-72b-instruct": {
@@ -41474,6 +41992,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/qwen/qwen-2.5-72b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "cohere/command-r-08-2024": {
@@ -41680,6 +42206,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/nousresearch/hermes-3-llama-3.1-70b/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 6.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "nousresearch/hermes-3-llama-3.1-405b": {
@@ -41732,6 +42266,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/nousresearch/hermes-3-llama-3.1-405b/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.4,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "sao10k/l3-lunaris-8b": {
@@ -41845,6 +42387,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/openai/gpt-4o-2024-08-06/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 7.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "meta-llama/llama-3.1-70b-instruct": {
@@ -41899,6 +42449,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 6.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "meta-llama/llama-3.1-8b-instruct": {
@@ -41960,7 +42518,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 6.9,
           "coding_index": 5.4,
           "agentic_index": null
         }
@@ -42085,7 +42643,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 6.7,
           "coding_index": 11.4,
           "agentic_index": null
         }
@@ -42210,7 +42768,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 6.7,
           "coding_index": 11.4,
           "agentic_index": null
         }
@@ -42430,7 +42988,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 7.3,
           "coding_index": 24.2,
           "agentic_index": null
         }
@@ -42593,6 +43151,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/mistralai/mixtral-8x22b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 5.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "microsoft/wizardlm-2-8x22b": {
@@ -42700,7 +43266,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 7,
           "coding_index": 21.5,
           "agentic_index": null
         }
@@ -42763,7 +43329,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 7,
           "coding_index": 21.5,
           "agentic_index": null
         }
@@ -42821,6 +43387,14 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/mistralai/mistral-large/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 5.8,
+          "coding_index": null,
+          "agentic_index": null
+        }
       }
     },
     "openai/gpt-3.5-turbo-0613": {
@@ -43267,7 +43841,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 5.5,
           "coding_index": 10.7,
           "agentic_index": null
         }
@@ -43329,7 +43903,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 5.5,
           "coding_index": 10.7,
           "agentic_index": null
         }
@@ -43391,7 +43965,7 @@
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
-          "intelligence_index": null,
+          "intelligence_index": 6.7,
           "coding_index": 13.1,
           "agentic_index": null
         }
