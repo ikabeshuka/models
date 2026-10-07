@@ -1,6 +1,160 @@
 {
-  "updated_at": "2026-10-07T16:25:41.104037+00:00",
+  "updated_at": "2026-10-07T21:57:50.145300+00:00",
   "models": {
+    "anthropic/claude-haiku-5.5": {
+      "id": "anthropic/claude-haiku-5.5",
+      "canonical_slug": "anthropic/claude-haiku-5.5-20261007",
+      "hugging_face_id": null,
+      "name": "Anthropic: Claude Haiku 5.5",
+      "created": 1791397883,
+      "description": "Claude Haiku 5.5 is Anthropic's small, fast model for high-volume, cost-sensitive work such as summarization, subagents, and browser use. It succeeds Claude Haiku 4.5 with stronger coding, computer use, and...",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "input_cache_write_1h": "0.0000002",
+        "overrides": [
+          {
+            "min_prompt_tokens": 100000,
+            "prompt": "0.0000005",
+            "completion": "0.0000025",
+            "input_cache_read": "0.00000005",
+            "input_cache_write": "0.000000625",
+            "input_cache_write_1h": "0.000001"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/anthropic/claude-haiku-5.5-20261007/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "medium"
+      }
+    },
+    "anthropic/claude-haiku-5.5:batch": {
+      "id": "anthropic/claude-haiku-5.5:batch",
+      "canonical_slug": "anthropic/claude-haiku-5.5-20261007",
+      "hugging_face_id": null,
+      "name": "Anthropic: Claude Haiku 5.5 (batch)",
+      "created": 1791397883,
+      "description": "Claude Haiku 5.5 is Anthropic's small, fast model for high-volume, cost-sensitive work such as summarization, subagents, and browser use. It succeeds Claude Haiku 4.5 with stronger coding, computer use, and...",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000005",
+        "completion": "0.00000025",
+        "web_search": "0.01",
+        "input_cache_read": "0.000000005",
+        "input_cache_write": "0.0000000625",
+        "input_cache_write_1h": "0.0000001",
+        "overrides": [
+          {
+            "min_prompt_tokens": 100000,
+            "prompt": "0.00000025",
+            "completion": "0.00000125",
+            "input_cache_read": "0.000000025",
+            "input_cache_write": "0.0000003125",
+            "input_cache_write_1h": "0.0000005"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/anthropic/claude-haiku-5.5-20261007/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "medium"
+      }
+    },
     "google/gemini-nano-banana-2.1": {
       "id": "google/gemini-nano-banana-2.1",
       "canonical_slug": "google/gemini-nano-banana-2.1-20261006",
@@ -491,7 +645,7 @@
         "prompt": "0.000002",
         "completion": "0.00001",
         "web_search": "0.01",
-        "input_cache_read": "0.0000002",
+        "input_cache_read": "0.0000001",
         "input_cache_write": "0.0000025",
         "input_cache_write_1h": "0.000004"
       },
@@ -589,7 +743,7 @@
         "prompt": "0.000001",
         "completion": "0.000005",
         "web_search": "0.01",
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000005",
         "input_cache_write": "0.00000125",
         "input_cache_write_1h": "0.000002"
       },
@@ -2909,9 +3063,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000002917",
+        "prompt": "0.0000002856",
         "completion": "0.0000042",
-        "input_cache_read": "0.00000029"
+        "input_cache_read": "0.0000002"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -2986,9 +3140,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.0000006",
-        "input_cache_read": "0.000000005"
+        "prompt": "0.000000019",
+        "completion": "0.000000424",
+        "input_cache_read": "0.000000009"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -3714,9 +3868,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.0000006",
-        "input_cache_read": "0.000000005"
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.000000006"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -5691,9 +5845,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000214",
+        "prompt": "0.00000004",
         "completion": "0.0000005",
-        "input_cache_read": "0.0000000214"
+        "input_cache_read": "0.000000025"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6346,13 +6500,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000063",
-        "completion": "0.0000063",
-        "input_cache_read": "0.0000000585"
+        "prompt": "0.000000062",
+        "completion": "0.00000339",
+        "input_cache_read": "0.00000006"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -6465,9 +6619,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000007",
-        "completion": "0.000007",
-        "input_cache_read": "0.000000065"
+        "prompt": "0.000000062",
+        "completion": "0.00000339",
+        "input_cache_read": "0.00000006"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10445,9 +10599,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000062",
+        "prompt": "0.0000005",
         "completion": "0.000015",
-        "input_cache_read": "0.00000043"
+        "input_cache_read": "0.00000045"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -17304,14 +17458,14 @@
       "id": "~anthropic/claude-haiku-latest",
       "canonical_slug": "~anthropic/claude-haiku-latest",
       "alias_target": {
-        "name": "Anthropic: Claude Haiku 4.5",
-        "slug": "anthropic/claude-haiku-4.5"
+        "name": "Anthropic: Claude Haiku 5.5",
+        "slug": "anthropic/claude-haiku-5.5"
       },
       "hugging_face_id": null,
       "name": "Anthropic: Claude Haiku Latest",
       "created": 1777318492,
       "description": "This model always redirects to the latest model in the Claude Haiku family.",
-      "context_length": 200000,
+      "context_length": 1000000,
       "architecture": {
         "modality": "text+image+file->text",
         "input_modalities": [
@@ -17326,16 +17480,26 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000001",
-        "completion": "0.000005",
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
         "web_search": "0.01",
-        "input_cache_read": "0.0000001",
-        "input_cache_write": "0.00000125",
-        "input_cache_write_1h": "0.000002"
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "input_cache_write_1h": "0.0000002",
+        "overrides": [
+          {
+            "min_prompt_tokens": 100000,
+            "prompt": "0.0000005",
+            "completion": "0.0000025",
+            "input_cache_read": "0.00000005",
+            "input_cache_write": "0.000000625",
+            "input_cache_write_1h": "0.000001"
+          }
+        ]
       },
       "top_provider": {
-        "context_length": 200000,
-        "max_completion_tokens": 64000,
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -17344,23 +17508,16 @@
         "max_completion_tokens",
         "max_tokens",
         "reasoning",
+        "reasoning_effort",
         "response_format",
         "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
-        "top_p"
+        "verbosity"
       ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
+      "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": null,
       "expiration_date": null,
@@ -17368,7 +17525,15 @@
         "details": "/api/v1/models/~anthropic/claude-haiku-latest/endpoints"
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": false,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "medium"
       }
     },
     "~openai/gpt-mini-latest": {
@@ -17566,7 +17731,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000061",
+        "prompt": "0.00000049",
         "completion": "0.000013",
         "input_cache_read": "0.00000045"
       },
@@ -17728,7 +17893,7 @@
         "prompt": "0.000002",
         "completion": "0.00001",
         "web_search": "0.01",
-        "input_cache_read": "0.0000002",
+        "input_cache_read": "0.0000001",
         "input_cache_write": "0.0000025",
         "input_cache_write_1h": "0.000004"
       },
@@ -20215,9 +20380,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       },
       "top_provider": {
         "context_length": 262144,
@@ -22432,7 +22597,7 @@
       },
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-10-21",
       "links": {
         "details": "/api/v1/models/qwen/qwen3.5-9b-20260310/endpoints"
       },
@@ -29075,13 +29240,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000028",
+        "prompt": "0.000000259",
         "completion": "0.00000042",
-        "input_cache_read": "0.000000028"
+        "input_cache_read": "0.000000135"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 65536,
+        "context_length": 163840,
+        "max_completion_tokens": 147456,
         "is_moderated": false
       },
       "per_request_limits": null,
