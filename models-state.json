@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T16:26:50.868162+00:00",
+  "updated_at": "2026-10-08T22:03:25.819738+00:00",
   "models": {
     "stepfun/step-5-preview": {
       "id": "stepfun/step-5-preview",
@@ -310,7 +310,7 @@
       "hugging_face_id": null,
       "name": "Mistral: Mistral Large 4",
       "created": 1791294122,
-      "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 512K-token context window with up...",
+      "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 1M-token context window with up...",
       "context_length": 1048576,
       "architecture": {
         "modality": "text+image->text",
@@ -668,6 +668,88 @@
         "default_effort": "medium"
       }
     },
+    "openai/gpt-6.1-sol-pro:batch": {
+      "id": "openai/gpt-6.1-sol-pro:batch",
+      "canonical_slug": "openai/gpt-6.1-sol-pro-20260929",
+      "hugging_face_id": null,
+      "name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+      "created": 1790702886,
+      "description": "GPT-6.1 Sol Pro is the same underlying model as [GPT-6.1 Sol](https://openrouter.ai/openai/gpt-6.1-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+      "context_length": 1050000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000001",
+        "completion": "0.000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000005",
+        "input_cache_write": "0.00000125",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000002",
+            "completion": "0.0000075",
+            "input_cache_read": "0.0000001",
+            "input_cache_write": "0.0000025"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 1050000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-6.1-sol-pro-20260929/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "medium"
+      }
+    },
     "openai/gpt-6.1-sol": {
       "id": "openai/gpt-6.1-sol",
       "canonical_slug": "openai/gpt-6.1-sol-20260929",
@@ -714,6 +796,97 @@
       "supported_parameters": [
         "include_reasoning",
         "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-6.1-sol-20260929/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [
+          {
+            "arena": "models",
+            "category": "website",
+            "elo": 1312,
+            "win_rate": 54.7,
+            "rank": 9
+          }
+        ],
+        "artificial_analysis": {
+          "intelligence_index": 51.8,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "medium"
+      }
+    },
+    "openai/gpt-6.1-sol:batch": {
+      "id": "openai/gpt-6.1-sol:batch",
+      "canonical_slug": "openai/gpt-6.1-sol-20260929",
+      "hugging_face_id": null,
+      "name": "OpenAI: GPT-6.1 Sol (batch)",
+      "created": 1790702882,
+      "description": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. It is suited for agentic coding, computer use, document-heavy professional...",
+      "context_length": 1050000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000001",
+        "completion": "0.000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000005",
+        "input_cache_write": "0.00000125",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000002",
+            "completion": "0.0000075",
+            "input_cache_read": "0.0000001",
+            "input_cache_write": "0.0000025"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 1050000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
         "max_tokens",
         "reasoning",
         "reasoning_effort",
@@ -3224,7 +3397,7 @@
       "pricing": {
         "prompt": "0.0000001271",
         "completion": "0.000008",
-        "input_cache_read": "0.0000000953"
+        "input_cache_read": "0.00000013"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -3299,9 +3472,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000283",
-        "completion": "0.000001",
-        "input_cache_read": "0.00000001"
+        "prompt": "0.000000016",
+        "completion": "0.0000012",
+        "input_cache_read": "0.000000005"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -4027,9 +4200,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000283",
-        "completion": "0.000001",
-        "input_cache_read": "0.00000001"
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.000000006"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -4679,11 +4852,11 @@
         "default_effort": "medium"
       }
     },
-    "inclusionai/ling-3.0-flash-sante:free": {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
+    "inclusionai/ling-3.0-flash-sante": {
+      "id": "inclusionai/ling-3.0-flash-sante",
       "canonical_slug": "inclusionai/ling-3.0-flash-sante-20260904",
       "hugging_face_id": null,
-      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
       "created": 1788545946,
       "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
       "context_length": 262144,
@@ -4699,8 +4872,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0",
-        "completion": "0"
+        "prompt": "0.000000042",
+        "completion": "0.0000001232",
+        "input_cache_read": "0.0000000084"
       },
       "top_provider": {
         "context_length": 262144,
@@ -6005,7 +6179,7 @@
       },
       "pricing": {
         "prompt": "0.000000032",
-        "completion": "0.000004835323",
+        "completion": "0.000003109323",
         "input_cache_read": "0.00000002"
       },
       "top_provider": {
@@ -6659,9 +6833,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000472",
+        "prompt": "0.00000004",
         "completion": "0.000012",
-        "input_cache_read": "0.0000000439"
+        "input_cache_read": "0.0000000372"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6778,8 +6952,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000075",
-        "completion": "0.0000042",
+        "prompt": "0.000000049",
+        "completion": "0.00000339",
         "input_cache_read": "0.000000048"
       },
       "top_provider": {
@@ -8805,9 +8979,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000046",
-        "completion": "0.00000128",
-        "input_cache_read": "0.0000000046"
+        "prompt": "0.00000000632",
+        "completion": "0.000000484359",
+        "input_cache_read": "0.00000000632"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -8877,9 +9051,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000046",
+        "prompt": "0.0000000079",
         "completion": "0.00000128",
-        "input_cache_read": "0.0000000046"
+        "input_cache_read": "0.0000000079"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10757,9 +10931,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000062",
-        "completion": "0.0000123",
-        "input_cache_read": "0.00000043"
+        "prompt": "0.00000082",
+        "completion": "0.0000135",
+        "input_cache_read": "0.00000055"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -13689,9 +13863,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000003",
-        "completion": "0.00001",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.00000007",
+        "completion": "0.0000043",
+        "input_cache_read": "0.00000007"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -17887,9 +18061,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000045",
+        "prompt": "0.00000081",
         "completion": "0.000013",
-        "input_cache_read": "0.00000045"
+        "input_cache_read": "0.0000003"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -18404,8 +18578,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000045",
-        "completion": "0.0000027"
+        "prompt": "0.0000003",
+        "completion": "0.000002",
+        "input_cache_read": "0.00000003"
       },
       "top_provider": {
         "context_length": 262144,
@@ -19104,9 +19279,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000029232",
-        "completion": "0.00000058464",
-        "input_cache_read": "0.00000002436"
+        "prompt": "0.000000287274",
+        "completion": "0.000000574548",
+        "input_cache_read": "0.0000000239395"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -19262,9 +19437,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000099",
+        "prompt": "0.0000000131",
         "completion": "0.00000128",
-        "input_cache_read": "0.0000000099"
+        "input_cache_read": "0.0000000131"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -19927,9 +20102,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000004375",
+        "prompt": "0.0000004344",
         "completion": "0.00000245",
-        "input_cache_read": "0.0000001211"
+        "input_cache_read": "0.00000012"
       },
       "top_provider": {
         "context_length": 262144,
@@ -20533,9 +20708,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       },
       "top_provider": {
         "context_length": 262144,
@@ -38423,6 +38598,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -38435,7 +38611,9 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_a",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -42884,7 +43062,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000019",
+        "prompt": "0.000000029",
         "completion": "0.00000003"
       },
       "top_provider": {
