@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T19:14:35.026996+00:00",
+  "updated_at": "2026-10-13T23:16:46.041587+00:00",
   "models": {
     "liquid/lfm-2.5-24b-a2b": {
       "id": "liquid/lfm-2.5-24b-a2b",
@@ -21,9 +21,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001",
-        "completion": "0.000001",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.00000005",
+        "completion": "0.0000007",
+        "input_cache_read": "0.000000025"
       },
       "top_provider": {
         "context_length": 128000,
@@ -34,6 +34,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_completion_tokens",
         "max_tokens",
         "min_p",
@@ -47,7 +48,8 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_k"
+        "top_k",
+        "top_logprobs"
       ],
       "default_parameters": {
         "temperature": 0.1,
@@ -1035,7 +1037,7 @@
       "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-10-14",
       "links": {
         "details": "/api/v1/models/unbiased/pareto-26.10-preview-20260929/endpoints"
       }
@@ -3970,9 +3972,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000024948",
-        "completion": "0.00000074844",
-        "input_cache_read": "0.000000007938"
+        "prompt": "0.0000001461",
+        "completion": "0.000008",
+        "input_cache_read": "0.00000015"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -4048,7 +4050,7 @@
       },
       "pricing": {
         "prompt": "0.0000000441",
-        "completion": "0.00000063",
+        "completion": "0.000000765",
         "input_cache_read": "0.0000000054"
       },
       "top_provider": {
@@ -4774,7 +4776,7 @@
       },
       "pricing": {
         "prompt": "0.0000000441",
-        "completion": "0.00000063",
+        "completion": "0.000000765",
         "input_cache_read": "0.0000000054"
       },
       "top_provider": {
@@ -6623,7 +6625,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000261",
+        "prompt": "0.0000000333",
         "completion": "0.0000009",
         "input_cache_read": "0.0000000108"
       },
@@ -6762,7 +6764,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000261",
+        "prompt": "0.0000000333",
         "completion": "0.0000009",
         "input_cache_read": "0.0000000108"
       },
@@ -7277,13 +7279,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000079",
-        "completion": "0.0000048",
-        "input_cache_read": "0.000000059"
+        "prompt": "0.000000063",
+        "completion": "0.0000044",
+        "input_cache_read": "0.0000000586"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -14319,9 +14321,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000006",
-        "completion": "0.0000056",
-        "input_cache_read": "0.000000059"
+        "prompt": "0.00000008",
+        "completion": "0.000007",
+        "input_cache_read": "0.00000007"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -18517,9 +18519,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000073",
-        "completion": "0.00001",
-        "input_cache_read": "0.00000055"
+        "prompt": "0.00000072",
+        "completion": "0.000024",
+        "input_cache_read": "0.0000003"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -19658,9 +19660,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000424212",
-        "completion": "0.000000848424",
-        "input_cache_read": "0.000000035351"
+        "prompt": "0.000000383496",
+        "completion": "0.000000766992",
+        "input_cache_read": "0.000000031958"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -20444,7 +20446,32 @@
         "is_moderated": false
       },
       "per_request_limits": null,
-      "supported_parameters": [],
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "parallel_tool_calls",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_logprobs",
+        "top_p",
+        "verbosity"
+      ],
       "default_parameters": {
         "temperature": null,
         "top_p": null,
@@ -38241,6 +38268,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -38253,7 +38281,9 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_a",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
