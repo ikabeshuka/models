@@ -1,6 +1,112 @@
 {
-  "updated_at": "2026-10-15T20:19:48.500394+00:00",
+  "updated_at": "2026-10-15T23:40:54.209641+00:00",
   "models": {
+    "moondream/moondream3-preview": {
+      "id": "moondream/moondream3-preview",
+      "canonical_slug": "moondream/moondream3-preview-20261013",
+      "hugging_face_id": "moondream/moondream3-preview",
+      "name": "Moondream: Moondream 3 Preview",
+      "created": 1792102385,
+      "description": "Moondream 3 Preview is a vision-language model from Moondream with 9B total parameters and 2B active (mixture-of-experts). It handles visual question answering, captioning, OCR, and visual reasoning over images, with...",
+      "context_length": 32000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000025"
+      },
+      "top_provider": {
+        "context_length": 32000,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/moondream/moondream3-preview-20261013/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": false
+      }
+    },
+    "moondream/moondream3.1-9b-a2b": {
+      "id": "moondream/moondream3.1-9b-a2b",
+      "canonical_slug": "moondream/moondream3.1-9b-a2b-20261013",
+      "hugging_face_id": "moondream/moondream3.1-9B-A2B",
+      "name": "Moondream: Moondream 3.1",
+      "created": 1792102373,
+      "description": "Moondream 3.1 is a vision-language model from Moondream, the successor to Moondream 3 Preview, with 9B total parameters and 2B active (mixture-of-experts). It handles visual question answering, captioning, OCR, and...",
+      "context_length": 32000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000025"
+      },
+      "top_provider": {
+        "context_length": 32000,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/moondream/moondream3.1-9b-a2b-20261013/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": false
+      }
+    },
     "meta/muse-spark-open": {
       "id": "meta/muse-spark-open",
       "canonical_slug": "meta/muse-spark-open-20261015",
@@ -823,7 +929,7 @@
       "pricing": {
         "prompt": "0.000001",
         "completion": "0.0000027",
-        "input_cache_read": "0.00000005"
+        "input_cache_read": "0.0000001"
       },
       "top_provider": {
         "context_length": 1000000,
@@ -4371,7 +4477,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000001116",
+        "prompt": "0.00000001035",
         "completion": "0.00000072",
         "input_cache_read": "0.0000000054"
       },
@@ -5098,13 +5204,94 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000001116",
-        "completion": "0.00000072",
-        "input_cache_read": "0.0000000054"
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000003",
+        "overrides": [
+          {
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 0,
+            "utc_end": 100,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 100,
+            "utc_end": 400,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 400,
+            "utc_end": 600,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 600,
+            "utc_end": 1000,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 1000,
+            "utc_end": 0,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          }
+        ]
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 393216,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -6950,7 +7137,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000036",
+        "prompt": "0.00000002007",
         "completion": "0.0000009",
         "input_cache_read": "0.00000001125"
       },
@@ -7089,13 +7276,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.00000002007",
+        "completion": "0.0000009",
+        "input_cache_read": "0.00000001125"
       },
       "top_provider": {
-        "context_length": 1048575,
-        "max_completion_tokens": 943717,
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -7724,9 +7911,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000011",
-        "completion": "0.000006",
-        "input_cache_read": "0.000000109"
+        "prompt": "0.0000007",
+        "completion": "0.00001",
+        "input_cache_read": "0.00000069"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -9752,9 +9939,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000001233",
+        "prompt": "0.0000000072",
         "completion": "0.000000576",
-        "input_cache_read": "0.0000000108"
+        "input_cache_read": "0.0000000072"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -9825,9 +10012,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000137",
+        "prompt": "0.000000008",
         "completion": "0.00000064",
-        "input_cache_read": "0.0000000137"
+        "input_cache_read": "0.000000008"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -14660,9 +14847,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001",
+        "prompt": "0.000000037",
         "completion": "0.000007",
-        "input_cache_read": "0.000000099"
+        "input_cache_read": "0.000000036"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -18856,9 +19043,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000036",
-        "completion": "0.0000149",
-        "input_cache_read": "0.000000359"
+        "prompt": "0.00000035",
+        "completion": "0.000014",
+        "input_cache_read": "0.0000003"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -19999,9 +20186,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000038019",
-        "completion": "0.00000076038",
-        "input_cache_read": "0.0000000316825"
+        "prompt": "0.00000095526",
+        "completion": "0.00000191052",
+        "input_cache_read": "0.000000079605"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -30882,14 +31069,14 @@
       },
       "reasoning": {
         "mandatory": false,
-        "default_enabled": true,
+        "default_enabled": false,
         "supported_efforts": [
           "high",
           "medium",
           "low",
           "none"
         ],
-        "default_effort": "none"
+        "default_effort": "medium"
       }
     },
     "openai/gpt-5.1:batch": {
@@ -31018,14 +31205,14 @@
       },
       "reasoning": {
         "mandatory": false,
-        "default_enabled": true,
+        "default_enabled": false,
         "supported_efforts": [
           "high",
           "medium",
           "low",
           "none"
         ],
-        "default_effort": "none"
+        "default_effort": "medium"
       }
     },
     "openai/gpt-5.1-codex": {
