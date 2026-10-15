@@ -1,6 +1,80 @@
 {
-  "updated_at": "2026-10-15T16:57:31.409907+00:00",
+  "updated_at": "2026-10-15T20:19:48.500394+00:00",
   "models": {
+    "meta/muse-spark-open": {
+      "id": "meta/muse-spark-open",
+      "canonical_slug": "meta/muse-spark-open-20261015",
+      "hugging_face_id": "meta-models/Muse-Spark-Open-816B-A42B",
+      "name": "Meta: Muse Spark Open",
+      "created": 1792087069,
+      "description": "Muse Spark Open is a coding-optimized open-weight model. Trained specifically for agentic coding workflows, it delivers higher first-attempt accuracy, reliable tool calling, and deep codebase understanding across the repos developers...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image+file+audio+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000125",
+        "completion": "0.00000425",
+        "input_cache_read": "0.00000015"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/meta/muse-spark-open-20261015/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "supported_efforts": [
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "medium"
+      }
+    },
     "nvidia/nemotron-3.5-super-vl": {
       "id": "nvidia/nemotron-3.5-super-vl",
       "canonical_slug": "nvidia/nemotron-3.5-super-vl-20261015",
@@ -934,7 +1008,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -1061,7 +1136,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -1124,7 +1200,8 @@
         "default_enabled": true,
         "supported_efforts": [
           "high",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "minimal"
       }
@@ -2180,7 +2257,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "max"
       }
@@ -4120,7 +4198,8 @@
         "default_enabled": true,
         "supported_efforts": [
           "xhigh",
-          "medium"
+          "medium",
+          "none"
         ],
         "default_effort": "xhigh"
       }
@@ -4261,7 +4340,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -4291,7 +4371,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000216",
+        "prompt": "0.00000001116",
         "completion": "0.00000072",
         "input_cache_read": "0.0000000054"
       },
@@ -4336,7 +4416,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -5017,7 +5098,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000216",
+        "prompt": "0.00000001116",
         "completion": "0.00000072",
         "input_cache_read": "0.0000000054"
       },
@@ -5070,7 +5151,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -5147,7 +5229,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -6008,14 +6091,14 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000075",
-        "completion": "0.00000375",
-        "image": "0.00000075",
-        "audio": "0.00000075",
-        "input_audio_cache": "0.000000075",
+        "prompt": "0.000000825",
+        "completion": "0.000004125",
+        "image": "0.000000825",
+        "audio": "0.000000825",
+        "input_audio_cache": "0.0000000825",
         "web_search": "0.014",
-        "internal_reasoning": "0.00000375",
-        "input_cache_read": "0.000000075",
+        "internal_reasoning": "0.000004125",
+        "input_cache_read": "0.0000000825",
         "input_cache_write": "0.0000000416666666666667"
       },
       "top_provider": {
@@ -7404,7 +7487,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -7640,9 +7724,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001",
-        "completion": "0.0000048",
-        "input_cache_read": "0.000000099"
+        "prompt": "0.00000011",
+        "completion": "0.000006",
+        "input_cache_read": "0.000000109"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -8017,7 +8101,8 @@
         "supported_efforts": [
           "xhigh",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "xhigh"
       }
@@ -8631,7 +8716,8 @@
         "supported_efforts": [
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -8792,7 +8878,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -9665,7 +9752,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000144",
+        "prompt": "0.00000001233",
         "completion": "0.000000576",
         "input_cache_read": "0.0000000108"
       },
@@ -9712,7 +9799,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -9737,9 +9825,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000016",
+        "prompt": "0.0000000137",
         "completion": "0.00000064",
-        "input_cache_read": "0.000000016"
+        "input_cache_read": "0.0000000137"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -9849,7 +9937,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -10280,7 +10369,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -10461,7 +10551,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -11631,8 +11722,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000045",
-        "completion": "0.0000165",
+        "prompt": "0.000000405",
+        "completion": "0.000015",
         "input_cache_read": "0.00000028"
       },
       "top_provider": {
@@ -11797,7 +11888,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "max"
       }
@@ -11988,7 +12080,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "max"
       }
@@ -14023,7 +14116,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -14211,7 +14305,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -14271,7 +14366,8 @@
         "default_enabled": true,
         "supported_efforts": [
           "high",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "minimal"
       }
@@ -14406,7 +14502,8 @@
         "default_enabled": true,
         "supported_efforts": [
           "high",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "minimal"
       }
@@ -14563,9 +14660,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.000008",
-        "input_cache_read": "0.000000149"
+        "prompt": "0.0000001",
+        "completion": "0.000007",
+        "input_cache_read": "0.000000099"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -14736,7 +14833,8 @@
         "default_enabled": true,
         "supported_efforts": [
           "xhigh",
-          "high"
+          "high",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -15723,7 +15821,8 @@
         "supports_max_tokens": true,
         "supported_efforts": [
           "high",
-          "medium"
+          "medium",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -15853,7 +15952,8 @@
         "supports_max_tokens": true,
         "supported_efforts": [
           "high",
-          "medium"
+          "medium",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -16539,7 +16639,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -16762,7 +16863,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -17643,7 +17745,8 @@
           "high",
           "medium",
           "low",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "minimal"
       }
@@ -17722,7 +17825,8 @@
           "high",
           "medium",
           "low",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "minimal"
       }
@@ -18561,7 +18665,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -18751,9 +18856,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000044",
-        "completion": "0.000014",
-        "input_cache_read": "0.0000003"
+        "prompt": "0.00000036",
+        "completion": "0.0000149",
+        "input_cache_read": "0.000000359"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -18803,7 +18908,8 @@
         "supported_efforts": [
           "max",
           "high",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "max"
       }
@@ -19192,12 +19298,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000032",
-        "completion": "0.0000032"
+        "prompt": "0.00000025",
+        "completion": "0.000002",
+        "input_cache_read": "0.000000025"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 81920,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -19892,9 +19999,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000415686",
-        "completion": "0.000000831372",
-        "input_cache_read": "0.0000000346405"
+        "prompt": "0.00000038019",
+        "completion": "0.00000076038",
+        "input_cache_read": "0.0000000316825"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -20025,7 +20132,8 @@
         "mandatory": false,
         "supported_efforts": [
           "xhigh",
-          "high"
+          "high",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -20160,7 +20268,8 @@
         "mandatory": false,
         "supported_efforts": [
           "xhigh",
-          "high"
+          "high",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -21018,7 +21127,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -21093,7 +21203,8 @@
           "xhigh",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -21346,9 +21457,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       },
       "top_provider": {
         "context_length": 262144,
@@ -23343,7 +23454,8 @@
         "supports_max_tokens": true,
         "supported_efforts": [
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -23418,7 +23530,8 @@
         "supports_max_tokens": true,
         "supported_efforts": [
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -23495,7 +23608,8 @@
           "high",
           "medium",
           "low",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -24362,7 +24476,8 @@
           "high",
           "medium",
           "low",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "minimal"
       }
@@ -24436,7 +24551,8 @@
           "high",
           "medium",
           "low",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -24529,7 +24645,8 @@
         "default_enabled": true,
         "supported_efforts": [
           "high",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "minimal"
       }
@@ -25796,7 +25913,8 @@
           "max",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -25970,7 +26088,8 @@
           "max",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -26693,7 +26812,8 @@
           "max",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -26862,7 +26982,8 @@
           "max",
           "high",
           "medium",
-          "low"
+          "low",
+          "none"
         ],
         "default_effort": "high"
       }
@@ -28344,7 +28465,8 @@
           "high",
           "medium",
           "low",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -28513,7 +28635,8 @@
           "high",
           "medium",
           "low",
-          "minimal"
+          "minimal",
+          "none"
         ],
         "default_effort": "medium"
       }
@@ -31162,7 +31285,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false,
+        "mandatory": true,
         "supported_efforts": [
           "high",
           "medium",
@@ -37799,7 +37922,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "google/gemini-2.5-pro-preview": {
@@ -38561,7 +38684,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "openai/o3:batch": {
@@ -38659,7 +38782,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "openai/o4-mini": {
@@ -38764,7 +38887,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "openai/o4-mini:batch": {
@@ -38869,7 +38992,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "openai/gpt-4.1": {
@@ -39810,7 +39933,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "mistralai/mistral-small-3.1-24b-instruct": {
@@ -40306,7 +40429,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "perplexity/sonar-pro": {
@@ -40415,7 +40538,7 @@
         "details": "/api/v1/models/perplexity/sonar-deep-research/endpoints"
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "mistralai/mistral-saba": {
@@ -40776,7 +40899,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "openai/o3-mini:batch": {
@@ -40844,7 +40967,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "mistralai/mistral-small-24b-instruct-2501": {
@@ -41369,7 +41492,7 @@
         }
       },
       "reasoning": {
-        "mandatory": false
+        "mandatory": true
       }
     },
     "cohere/command-r7b-12-2024": {
