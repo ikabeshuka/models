@@ -1,6 +1,69 @@
 {
-  "updated_at": "2026-10-16T18:47:41.442580+00:00",
+  "updated_at": "2026-10-16T22:04:36.843220+00:00",
   "models": {
+    "xingchen-agi/xing4.0-29b-a4b:free": {
+      "id": "xingchen-agi/xing4.0-29b-a4b:free",
+      "canonical_slug": "xingchen-agi/xing4.0-29b-a4b-20261015",
+      "hugging_face_id": "XingChen-AGI/Xing4.0-29B-A4B",
+      "name": "XingChen: Xing4.0 29B A4B (free)",
+      "created": 1792177496,
+      "description": "Xing4.0-29B-A4B is an open-weight mixture-of-experts language model from China Telecom's AI team (TeleAI) and the successor to the TeleChat series. It has 29B total parameters with 4B active per token...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 235929,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "repetition_penalty": 1.05
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/xingchen-agi/xing4.0-29b-a4b-20261015/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true
+      }
+    },
     "reflection/beam-1.0-501b-a23b": {
       "id": "reflection/beam-1.0-501b-a23b",
       "canonical_slug": "reflection/beam-1.0-501b-a23b-20261016",
@@ -21,12 +84,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000025",
-        "completion": "0.000001"
+        "prompt": "0.000001",
+        "completion": "0.000003",
+        "input_cache_read": "0.0000001"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -5428,13 +5492,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000112",
-        "completion": "0.000000336",
-        "input_cache_read": "0.00000000336"
+        "prompt": "0.00000005",
+        "completion": "0.00000015",
+        "input_cache_read": "0.000000004"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 384000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -5442,6 +5506,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -5456,6 +5521,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -7198,8 +7264,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000003384",
-        "completion": "0.000000585",
+        "prompt": "0.00000002853",
+        "completion": "0.0000006435",
         "input_cache_read": "0.00000001125"
       },
       "top_provider": {
@@ -7337,8 +7403,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000003384",
-        "completion": "0.000000585",
+        "prompt": "0.00000002853",
+        "completion": "0.0000006435",
         "input_cache_read": "0.00000001125"
       },
       "top_provider": {
@@ -10002,9 +10068,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000008",
-        "completion": "0.00000128",
-        "input_cache_read": "0.000000008"
+        "prompt": "0.00000000522",
+        "completion": "0.0000012672",
+        "input_cache_read": "0.00000000522"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10075,9 +10141,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000008",
+        "prompt": "0.0000000058",
         "completion": "0.00000128",
-        "input_cache_read": "0.000000008"
+        "input_cache_read": "0.0000000058"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -19106,9 +19172,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000304",
-        "completion": "0.000011936",
-        "input_cache_read": "0.00000021"
+        "prompt": "0.000000294",
+        "completion": "0.000024",
+        "input_cache_read": "0.000000284"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -20249,9 +20315,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000297192",
-        "completion": "0.000000594384",
-        "input_cache_read": "0.000000024766"
+        "prompt": "0.0000002871",
+        "completion": "0.0000005742",
+        "input_cache_read": "0.000000023925"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -21707,9 +21773,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000675",
+        "completion": "0.000000225",
+        "input_cache_read": "0.0000000375"
       },
       "top_provider": {
         "context_length": 262144,
@@ -36284,6 +36350,7 @@
         "frequency_penalty",
         "max_tokens",
         "response_format",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
