@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T17:07:52.432360+00:00",
+  "updated_at": "2026-10-17T19:22:04.058302+00:00",
   "models": {
     "deepseek/deepseek-v4.1-flash-1017": {
       "id": "deepseek/deepseek-v4.1-flash-1017",
@@ -10387,9 +10387,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000097",
+        "prompt": "0.0000000058",
         "completion": "0.00000128",
-        "input_cache_read": "0.0000000097"
+        "input_cache_read": "0.0000000058"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10460,9 +10460,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000097",
+        "prompt": "0.0000000058",
         "completion": "0.00000128",
-        "input_cache_read": "0.0000000097"
+        "input_cache_read": "0.0000000058"
       },
       "top_provider": {
         "context_length": 1048576,
