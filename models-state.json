@@ -1,6 +1,69 @@
 {
-  "updated_at": "2026-10-17T00:26:44.572699+00:00",
+  "updated_at": "2026-10-17T05:34:20.895863+00:00",
   "models": {
+    "elorian/glimpse": {
+      "id": "elorian/glimpse",
+      "canonical_slug": "elorian/glimpse-20261016",
+      "hugging_face_id": null,
+      "name": "Elorian: Glimpse",
+      "created": 1792206629,
+      "description": "Glimpse is a multimodal visual reasoning model from Elorian, built for visual understanding and complex visual reasoning in the physical world. It reasons directly over images and video rather than...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000006",
+        "completion": "0.000003",
+        "input_cache_read": "0.00000006"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 256000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/elorian/glimpse-20261016/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false
+      }
+    },
     "xingchen-agi/xing4.0-29b-a4b:free": {
       "id": "xingchen-agi/xing4.0-29b-a4b:free",
       "canonical_slug": "xingchen-agi/xing4.0-29b-a4b-20261015",
@@ -4607,9 +4670,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000024948",
-        "completion": "0.00000074844",
-        "input_cache_read": "0.000000007938"
+        "prompt": "0.00000023948",
+        "completion": "0.0000007497",
+        "input_cache_read": "0.00000002"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -4685,9 +4748,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000032",
-        "completion": "0.000000144",
-        "input_cache_read": "0.0000000016"
+        "prompt": "0.000000038",
+        "completion": "0.0000004026",
+        "input_cache_read": "0.000000008"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -5412,9 +5475,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000032",
-        "completion": "0.000000144",
-        "input_cache_read": "0.0000000016"
+        "prompt": "0.000000038",
+        "completion": "0.0000004026",
+        "input_cache_read": "0.000000008"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -7264,13 +7327,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000003168",
-        "completion": "0.0000002",
-        "input_cache_read": "0.0000000096"
+        "prompt": "0.000000057",
+        "completion": "0.0000005578",
+        "input_cache_read": "0.0000000075"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -7403,13 +7466,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000003168",
-        "completion": "0.0000002",
-        "input_cache_read": "0.0000000096"
+        "prompt": "0.00000015",
+        "completion": "0.0000005",
+        "input_cache_read": "0.00000003"
       },
       "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "context_length": 1048575,
+        "max_completion_tokens": 943717,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -7921,13 +7984,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000608",
-        "completion": "0.0000044",
-        "input_cache_read": "0.0000000565"
+        "prompt": "0.000000079",
+        "completion": "0.0000048",
+        "input_cache_read": "0.000000078"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -10068,9 +10131,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000000496",
-        "completion": "0.000000143616",
-        "input_cache_read": "0.000000001523"
+        "prompt": "0.0000000199",
+        "completion": "0.0000009653",
+        "input_cache_read": "0.000000014"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10142,8 +10205,8 @@
       },
       "pricing": {
         "prompt": "0.0000000199",
-        "completion": "0.00000128",
-        "input_cache_read": "0.0000000199"
+        "completion": "0.0000009653",
+        "input_cache_read": "0.000000014"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -20440,9 +20503,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000236292",
-        "completion": "0.000000472584",
-        "input_cache_read": "0.000000019691"
+        "prompt": "0.0000002088",
+        "completion": "0.0000004176",
+        "input_cache_read": "0.0000000174"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -28597,12 +28660,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000006",
-        "completion": "0.0000022",
-        "input_cache_read": "0.00000011"
+        "prompt": "0.00000054",
+        "completion": "0.00000198",
+        "input_cache_read": "0.000000099"
       },
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 204800,
         "max_completion_tokens": 131072,
         "is_moderated": false
       },
@@ -28637,7 +28700,7 @@
       },
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": "2026-12-31",
+      "expiration_date": null,
       "links": {
         "details": "/api/v1/models/z-ai/glm-4.7-20251222/endpoints"
       },
@@ -30680,13 +30743,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000259",
-        "completion": "0.0000008",
-        "input_cache_read": "0.00000014"
+        "prompt": "0.00000028",
+        "completion": "0.00000042",
+        "input_cache_read": "0.000000028"
       },
       "top_provider": {
-        "context_length": 163840,
-        "max_completion_tokens": 147456,
+        "context_length": 131072,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
