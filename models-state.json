@@ -1,6 +1,153 @@
 {
-  "updated_at": "2026-10-17T05:34:20.895863+00:00",
+  "updated_at": "2026-10-17T10:39:02.380180+00:00",
   "models": {
+    "deepseek/deepseek-v4.1-flash-1017": {
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "canonical_slug": "deepseek/deepseek-v4.1-flash-20261017",
+      "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "created": 1792225624,
+      "description": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-experts model...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000003",
+        "overrides": [
+          {
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 0,
+            "utc_end": 100,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 100,
+            "utc_end": 400,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 400,
+            "utc_end": 600,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 600,
+            "utc_end": 1000,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 1000,
+            "utc_end": 0,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 393216,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/deepseek/deepseek-v4.1-flash-20261017/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "high",
+          "low",
+          "none"
+        ],
+        "default_effort": "high"
+      }
+    },
     "elorian/glimpse": {
       "id": "elorian/glimpse",
       "canonical_slug": "elorian/glimpse-20261016",
@@ -4670,9 +4817,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000023948",
-        "completion": "0.0000007497",
-        "input_cache_read": "0.00000002"
+        "prompt": "0.00000012332",
+        "completion": "0.0000003831",
+        "input_cache_read": "0.0000000041"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -4727,8 +4874,8 @@
       "id": "~deepseek/deepseek-flash-latest",
       "canonical_slug": "~deepseek/deepseek-flash-latest",
       "alias_target": {
-        "name": "DeepSeek: DeepSeek V4.1 Flash",
-        "slug": "deepseek/deepseek-v4.1-flash"
+        "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+        "slug": "deepseek/deepseek-v4.1-flash-1017"
       },
       "hugging_face_id": null,
       "name": "DeepSeek: DeepSeek Flash Latest",
@@ -4748,35 +4895,110 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000038",
-        "completion": "0.0000004026",
-        "input_cache_read": "0.000000008"
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000003",
+        "overrides": [
+          {
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 0,
+            "utc_end": 100,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 100,
+            "utc_end": 400,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 400,
+            "utc_end": 600,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 600,
+            "utc_end": 1000,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 1000,
+            "utc_end": 0,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          }
+        ]
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 393216,
         "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
-        "repetition_penalty",
         "response_format",
-        "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_logprobs",
         "top_p"
       ],
@@ -5475,9 +5697,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000038",
-        "completion": "0.0000004026",
-        "input_cache_read": "0.000000008"
+        "prompt": "0.0000000153",
+        "completion": "0.000000594",
+        "input_cache_read": "0.0000000015"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -7327,13 +7549,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000057",
-        "completion": "0.0000005578",
-        "input_cache_read": "0.0000000075"
+        "prompt": "0.0000000238",
+        "completion": "0.0000003966",
+        "input_cache_read": "0.0000000076"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -7466,13 +7688,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.0000000238",
+        "completion": "0.0000003966",
+        "input_cache_read": "0.0000000076"
       },
       "top_provider": {
-        "context_length": 1048575,
-        "max_completion_tokens": 943717,
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -7984,13 +8206,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000079",
-        "completion": "0.0000048",
-        "input_cache_read": "0.000000078"
+        "prompt": "0.000000069",
+        "completion": "0.000003939",
+        "input_cache_read": "0.000000069"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -10131,9 +10353,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000199",
-        "completion": "0.0000009653",
-        "input_cache_read": "0.000000014"
+        "prompt": "0.0000000079",
+        "completion": "0.0000002829",
+        "input_cache_read": "0.0000000079"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10204,9 +10426,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000199",
-        "completion": "0.0000009653",
-        "input_cache_read": "0.000000014"
+        "prompt": "0.0000000079",
+        "completion": "0.0000002829",
+        "input_cache_read": "0.0000000079"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -19360,9 +19582,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000294",
-        "completion": "0.000024",
-        "input_cache_read": "0.000000284"
+        "prompt": "0.00000027",
+        "completion": "0.0000139778",
+        "input_cache_read": "0.0000000513"
       },
       "top_provider": {
         "context_length": 1048576,
