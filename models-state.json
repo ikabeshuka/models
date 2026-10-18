@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T04:27:13.757011+00:00",
+  "updated_at": "2026-10-18T09:34:09.657087+00:00",
   "models": {
     "deepseek/deepseek-v4.1-flash-1017": {
       "id": "deepseek/deepseek-v4.1-flash-1017",
@@ -8353,7 +8353,7 @@
       },
       "pricing": {
         "prompt": "0.000000079",
-        "completion": "0.0000048",
+        "completion": "0.0000025",
         "input_cache_read": "0.000000078"
       },
       "top_provider": {
@@ -10299,9 +10299,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000001592",
-        "completion": "0.000000143616",
-        "input_cache_read": "0.000000001523"
+        "prompt": "0.0000000151",
+        "completion": "0.00000045",
+        "input_cache_read": "0.0000000151"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10372,9 +10372,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.0000000151",
+        "completion": "0.00000045",
+        "input_cache_read": "0.0000000151"
       },
       "top_provider": {
         "context_length": 1048576,
