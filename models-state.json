@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T20:38:21.587669+00:00",
+  "updated_at": "2026-10-18T23:08:46.077379+00:00",
   "models": {
     "deepseek/deepseek-v4.1-flash-1017": {
       "id": "deepseek/deepseek-v4.1-flash-1017",
@@ -5724,8 +5724,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000608",
-        "completion": "0.000000144",
+        "prompt": "0.0000000632",
+        "completion": "0.00000012",
         "input_cache_read": "0.0000000016"
       },
       "top_provider": {
@@ -8353,7 +8353,7 @@
       },
       "pricing": {
         "prompt": "0.000000079",
-        "completion": "0.000001",
+        "completion": "0.0000014",
         "input_cache_read": "0.000000078"
       },
       "top_provider": {
@@ -10299,8 +10299,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000052",
-        "completion": "0.000000144",
+        "prompt": "0.00000000688",
+        "completion": "0.00000012",
         "input_cache_read": "0.000000001523"
       },
       "top_provider": {
@@ -10372,9 +10372,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000065",
+        "prompt": "0.0000000086",
         "completion": "0.00000045",
-        "input_cache_read": "0.0000000065"
+        "input_cache_read": "0.0000000086"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -37817,7 +37817,7 @@
       "name": "Morph: Morph V3 Fast",
       "created": 1751910002,
       "description": "Morph's fastest apply model for code edits. ~10,500 tokens/sec with 96% accuracy for rapid code transformations. The model requires the prompt to be in the following format: <instruction>{instruction}</instruction> <code>{initial_code}</code> <update>{edit_snippet}</update>...",
-      "context_length": 81920,
+      "context_length": 262144,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -37834,15 +37834,19 @@
         "completion": "0.0000012"
       },
       "top_provider": {
-        "context_length": 81920,
-        "max_completion_tokens": 38000,
+        "context_length": 262144,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "logprobs",
         "max_tokens",
+        "response_format",
         "stop",
-        "temperature"
+        "structured_outputs",
+        "temperature",
+        "top_logprobs"
       ],
       "default_parameters": {
         "temperature": null,
@@ -42881,12 +42885,12 @@
         "instruct_type": "llama3"
       },
       "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.00000033"
+        "prompt": "0.0000000509",
+        "completion": "0.000000335"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 117964,
+        "context_length": 80000,
+        "max_completion_tokens": 72000,
         "is_moderated": false
       },
       "per_request_limits": null,
