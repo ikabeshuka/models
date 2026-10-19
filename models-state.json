@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T13:06:58.922492+00:00",
+  "updated_at": "2026-10-19T19:18:51.979250+00:00",
   "models": {
     "minimax/minimax-m3.1-flash:free": {
       "id": "minimax/minimax-m3.1-flash:free",
@@ -446,6 +446,67 @@
           "low"
         ],
         "default_effort": "max"
+      }
+    },
+    "inception/mercury-3": {
+      "id": "inception/mercury-3",
+      "canonical_slug": "inception/mercury-3-20261019",
+      "hugging_face_id": null,
+      "name": "Inception: Mercury 3",
+      "created": 1792158337,
+      "description": "Mercury 3 is a diffusion-based language model from Inception, and the lab's most capable model to date. It is suited for agentic workflows and real-time applications where latency compounds, such...",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.00000035",
+        "input_cache_read": "0.00000001"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/inception/mercury-3-20261019/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true,
+        "supported_efforts": [
+          "high",
+          "medium",
+          "low",
+          "none"
+        ],
+        "default_effort": "medium"
       }
     },
     "moondream/moondream3-preview": {
@@ -5018,9 +5079,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001817",
+        "prompt": "0.0000001307",
         "completion": "0.000008",
-        "input_cache_read": "0.00000018"
+        "input_cache_read": "0.00000013"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -5096,9 +5157,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000047",
+        "prompt": "0.000000038",
         "completion": "0.0000006",
-        "input_cache_read": "0.000000006"
+        "input_cache_read": "0.000000005"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -5825,7 +5886,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000376",
+        "prompt": "0.0000000304",
         "completion": "0.00000008",
         "input_cache_read": "0.0000000016"
       },
@@ -7600,9 +7661,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000834",
-        "completion": "0.000002501",
-        "input_cache_read": "0.000000042",
+        "prompt": "0.0000007506",
+        "completion": "0.0000022509",
+        "input_cache_read": "0.0000000378",
         "overrides": [
           {
             "utc_start": 0,
@@ -8348,9 +8409,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
+        "prompt": "0.000000057",
         "completion": "0.000006",
-        "input_cache_read": "0.000000031"
+        "input_cache_read": "0.000000036"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10428,9 +10489,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000000688",
-        "completion": "0.00000012",
-        "input_cache_read": "0.00000000336"
+        "prompt": "0.0000000151",
+        "completion": "0.00000045",
+        "input_cache_read": "0.0000000151"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -10501,13 +10562,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.00000015",
-        "input_cache_read": "0.000000042"
+        "prompt": "0.0000001298",
+        "completion": "0.0000003894",
+        "input_cache_read": "0.00000000413"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -14412,9 +14473,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528",
-        "input_cache_read": "0.000000033",
+        "prompt": "0.0000000825",
+        "completion": "0.00000033",
+        "input_cache_read": "0.000000020625",
         "overrides": [
           {
             "utc_start": 0,
@@ -19700,7 +19761,7 @@
       },
       "pricing": {
         "prompt": "0.000000238",
-        "completion": "0.000013",
+        "completion": "0.000016",
         "input_cache_read": "0.000000228"
       },
       "top_provider": {
@@ -20842,9 +20903,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000447876",
-        "completion": "0.000000895752",
-        "input_cache_read": "0.000000037323"
+        "prompt": "0.000000395328",
+        "completion": "0.000000790656",
+        "input_cache_read": "0.000000032944"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -22314,9 +22375,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       },
       "top_provider": {
         "context_length": 262144,
@@ -43251,7 +43312,7 @@
       "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": "2023-12-31",
-      "expiration_date": null,
+      "expiration_date": "2026-11-02",
       "links": {
         "details": "/api/v1/models/nousresearch/hermes-3-llama-3.1-70b/endpoints"
       },
@@ -43311,7 +43372,7 @@
       "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": "2023-12-31",
-      "expiration_date": null,
+      "expiration_date": "2026-11-02",
       "links": {
         "details": "/api/v1/models/nousresearch/hermes-3-llama-3.1-405b/endpoints"
       }
