@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T19:13:20.243744+00:00",
+  "updated_at": "2026-10-20T22:17:20.881252+00:00",
   "models": {
     "minimax/minimax-m3.1-flash:free": {
       "id": "minimax/minimax-m3.1-flash:free",
@@ -10655,8 +10655,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000000912",
-        "completion": "0.00000012",
+        "prompt": "0.0000000168",
+        "completion": "0.00000011288",
         "input_cache_read": "0.000000003304"
       },
       "top_provider": {
@@ -21083,9 +21083,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000376884",
-        "completion": "0.000000753768",
-        "input_cache_read": "0.000000031407"
+        "prompt": "0.000000346434",
+        "completion": "0.000000692868",
+        "input_cache_read": "0.0000000288695"
       },
       "top_provider": {
         "context_length": 1024000,
