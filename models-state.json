@@ -1,6 +1,61 @@
 {
-  "updated_at": "2026-10-21T18:35:49.988973+00:00",
+  "updated_at": "2026-10-21T22:18:29.768921+00:00",
   "models": {
+    "recursive/flint-v1.0:free": {
+      "id": "recursive/flint-v1.0:free",
+      "canonical_slug": "recursive/flint-v1.0-20261021",
+      "hugging_face_id": "RecursiveSI/flint",
+      "name": "Recursive: Flint (free)",
+      "created": 1792422073,
+      "description": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recursive's autoresearch system Eureka Machine for coding agents. It is suited...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 235929,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/recursive/flint-v1.0-20261021/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true
+      }
+    },
     "minimax/minimax-m3.1-flash:free": {
       "id": "minimax/minimax-m3.1-flash:free",
       "canonical_slug": "minimax/minimax-m3.1-flash-20261019",
@@ -5358,9 +5413,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000049",
-        "completion": "0.000000375",
-        "input_cache_read": "0.000000001176"
+        "prompt": "0.00000007",
+        "completion": "0.0000005",
+        "input_cache_read": "0.000000008"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6087,13 +6142,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000002394",
-        "completion": "0.000000375",
-        "input_cache_read": "0.000000000342"
+        "prompt": "0.0000000342",
+        "completion": "0.0000001368",
+        "input_cache_read": "0.000000000684"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 393216,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -7974,13 +8029,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000051691",
-        "completion": "0.00000012",
-        "input_cache_read": "0.00000000375"
+        "prompt": "0.0000000063",
+        "completion": "0.0000001789",
+        "input_cache_read": "0.0000000063"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -21234,9 +21289,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000415686",
-        "completion": "0.000000831372",
-        "input_cache_read": "0.0000000346405"
+        "prompt": "0.000000392022",
+        "completion": "0.000000784044",
+        "input_cache_read": "0.0000000326685"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -22706,9 +22761,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       },
       "top_provider": {
         "context_length": 262144,
@@ -37922,81 +37977,6 @@
         "internal_reasoning": "0.0000004",
         "input_cache_read": "0.00000001",
         "input_cache_write": "0.0000000833333333333333"
-      },
-      "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 65535,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": "2025-01-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/google/gemini-2.5-flash-lite/endpoints"
-      },
-      "benchmarks": {
-        "design_arena": [],
-        "artificial_analysis": {
-          "intelligence_index": 10.4,
-          "coding_index": null,
-          "agentic_index": null
-        }
-      },
-      "reasoning": {
-        "mandatory": false
-      }
-    },
-    "google/gemini-2.5-flash-lite:batch": {
-      "id": "google/gemini-2.5-flash-lite:batch",
-      "canonical_slug": "google/gemini-2.5-flash-lite",
-      "hugging_face_id": "",
-      "name": "Google: Gemini 2.5 Flash Lite (batch)",
-      "created": 1753200276,
-      "description": "Gemini 2.5 Flash-Lite is a lightweight reasoning model in the Gemini 2.5 family, optimized for ultra-low latency and cost efficiency. It offers improved throughput, faster token generation, and better performance...",
-      "context_length": 1048576,
-      "architecture": {
-        "modality": "text+image+file+audio+video->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "file",
-          "audio",
-          "video"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Gemini",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.0000002",
-        "image": "0.00000005",
-        "audio": "0.00000015",
-        "input_audio_cache": "0.00000003",
-        "web_search": "0.014",
-        "internal_reasoning": "0.0000002",
-        "input_cache_read": "0.00000001"
       },
       "top_provider": {
         "context_length": 1048576,
