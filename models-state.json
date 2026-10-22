@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T13:45:08.469035+00:00",
+  "updated_at": "2026-10-22T18:30:27.069980+00:00",
   "models": {
     "recursive/flint-v1.0:free": {
       "id": "recursive/flint-v1.0:free",
@@ -3124,7 +3124,7 @@
       },
       "top_provider": {
         "context_length": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -4845,6 +4845,7 @@
         "logprobs",
         "max_tokens",
         "min_p",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -5362,9 +5363,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001817",
+        "prompt": "0.0000001307",
         "completion": "0.000008",
-        "input_cache_read": "0.00000018"
+        "input_cache_read": "0.00000013"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6186,6 +6187,7 @@
         "logprobs",
         "max_tokens",
         "min_p",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -7965,9 +7967,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000834",
-        "completion": "0.000002501",
-        "input_cache_read": "0.000000042",
+        "prompt": "0.0000007506",
+        "completion": "0.0000022509",
+        "input_cache_read": "0.0000000378",
         "overrides": [
           {
             "utc_start": 0,
@@ -7995,9 +7997,11 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_completion_tokens",
         "max_tokens",
         "min_p",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -8010,6 +8014,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -8832,13 +8837,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000079",
-        "completion": "0.0000014",
-        "input_cache_read": "0.000000078"
+        "prompt": "0.0000007",
+        "completion": "0.0000022",
+        "input_cache_read": "0.00000013"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -10882,13 +10887,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000004444",
-        "completion": "0.00000013332",
-        "input_cache_read": "0.000000001414"
+        "prompt": "0.0000000422",
+        "completion": "0.0000001729",
+        "input_cache_read": "0.0000000275"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -14879,9 +14884,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528",
-        "input_cache_read": "0.000000033",
+        "prompt": "0.0000000825",
+        "completion": "0.00000033",
+        "input_cache_read": "0.000000020625",
         "overrides": [
           {
             "utc_start": 0,
@@ -23501,7 +23506,7 @@
       },
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-10-26",
       "links": {
         "details": "/api/v1/models/arcee-ai/trinity-large-thinking/endpoints"
       },
