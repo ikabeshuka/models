@@ -1,6 +1,72 @@
 {
-  "updated_at": "2026-10-23T13:22:56.565989+00:00",
+  "updated_at": "2026-10-23T18:18:04.459808+00:00",
   "models": {
+    "moonshotai/kimi-k3.1-pro": {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "canonical_slug": "moonshotai/kimi-k3.1-pro-20261023",
+      "hugging_face_id": null,
+      "name": "MoonshotAI: Kimi K3.1 Pro",
+      "created": 1792778188,
+      "description": "Kimi K3.1 Pro is Moonshot AI's flagship open-weight multimodal reasoning model and a post-trained successor to Kimi K3, with a 1M-token context window. It is built for long-horizon coding, 3D...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "input_cache_read": "0.0000002"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "top_p": 0.95
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/moonshotai/kimi-k3.1-pro-20261023/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "high",
+          "low",
+          "none"
+        ],
+        "default_effort": "max"
+      }
+    },
     "recursive/flint-v1.0:free": {
       "id": "recursive/flint-v1.0:free",
       "canonical_slug": "recursive/flint-v1.0-20261021",
@@ -5458,9 +5524,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000020592",
-        "completion": "0.00000061776",
-        "input_cache_read": "0.000000006552"
+        "prompt": "0.0000001188",
+        "completion": "0.000008",
+        "input_cache_read": "0.00000012"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -5536,9 +5602,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000049",
-        "completion": "0.0000006",
-        "input_cache_read": "0.000000006"
+        "prompt": "0.00000007",
+        "completion": "0.0000005",
+        "input_cache_read": "0.000000008"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -8097,9 +8163,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000834",
-        "completion": "0.000002501",
-        "input_cache_read": "0.000000042",
+        "prompt": "0.0000007506",
+        "completion": "0.0000022509",
+        "input_cache_read": "0.0000000378",
         "overrides": [
           {
             "utc_start": 0,
@@ -8330,13 +8396,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000052",
-        "completion": "0.0000001985",
-        "input_cache_read": "0.0000000052"
+        "prompt": "0.00000015",
+        "completion": "0.0000005",
+        "input_cache_read": "0.00000003"
       },
       "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "context_length": 1048575,
+        "max_completion_tokens": 943717,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -11045,13 +11111,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000004708",
-        "completion": "0.00000014124",
-        "input_cache_read": "0.000000001498"
+        "prompt": "0.0000000422",
+        "completion": "0.0000001729",
+        "input_cache_read": "0.0000000275"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -11118,9 +11184,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000004708",
-        "completion": "0.00000014124",
-        "input_cache_read": "0.000000001498"
+        "prompt": "0.00000004444",
+        "completion": "0.00000013332",
+        "input_cache_read": "0.000000001414"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -13057,7 +13123,7 @@
       },
       "pricing": {
         "prompt": "0.000000239",
-        "completion": "0.000011936",
+        "completion": "0.0000108",
         "input_cache_read": "0.00000021"
       },
       "top_provider": {
@@ -15100,9 +15166,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528",
-        "input_cache_read": "0.000000033",
+        "prompt": "0.0000000825",
+        "completion": "0.00000033",
+        "input_cache_read": "0.000000020625",
         "overrides": [
           {
             "utc_start": 0,
@@ -20451,7 +20517,7 @@
       },
       "pricing": {
         "prompt": "0.000000238",
-        "completion": "0.000016",
+        "completion": "0.000024",
         "input_cache_read": "0.000000228"
       },
       "top_provider": {
@@ -21595,9 +21661,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000894012",
-        "completion": "0.000001788024",
-        "input_cache_read": "0.000000074501"
+        "prompt": "0.000000824412",
+        "completion": "0.000001648824",
+        "input_cache_read": "0.000000068701"
       },
       "top_provider": {
         "context_length": 1024000,
