@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T00:38:55.450409+00:00",
+  "updated_at": "2026-10-24T05:48:46.134898+00:00",
   "models": {
     "moonshotai/kimi-k3.1-pro": {
       "id": "moonshotai/kimi-k3.1-pro",
@@ -6375,6 +6375,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_a",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -8272,9 +8273,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000304",
-        "completion": "0.0000000852",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.0000000262",
+        "completion": "0.0000000788",
+        "input_cache_read": "0.0000000262"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -20567,7 +20568,7 @@
       },
       "pricing": {
         "prompt": "0.000000238",
-        "completion": "0.000016",
+        "completion": "0.000024",
         "input_cache_read": "0.000000228"
       },
       "top_provider": {
@@ -21711,9 +21712,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000662244",
-        "completion": "0.000001324488",
-        "input_cache_read": "0.000000055187"
+        "prompt": "0.000000530352",
+        "completion": "0.000001060704",
+        "input_cache_read": "0.000000044196"
       },
       "top_provider": {
         "context_length": 1024000,
